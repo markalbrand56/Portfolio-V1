@@ -1,0 +1,28 @@
+.ButtonLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: max-content;
+
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+
+    border-radius: 10px;
+}
+
+.ButtonLink:hover{
+    background-color: black;
+    color: white;
+}
+
+.ButtonLink img {
+    padding: 0.5em;
+    max-height: 30px;
+}
+
+.ButtonLink p {
+}
