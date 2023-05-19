@@ -1,7 +1,7 @@
-import Proyecto from './Proyecto'
+import Proyecto from "./Proyecto"
 
 export default {
-    title: 'Components/Proyecto',
+    title: "Components/Proyecto",
     component: Proyecto,
     tags: ["autodocs"],
     argTypes: {}

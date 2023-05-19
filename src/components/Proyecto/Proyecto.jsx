@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import PropTypes from "prop-types"
 
-const Proyecto = ({title, description, tags}) => {
+function Proyecto({ title, description, tags }) {
     return (
         <div>
             <h1>{title}</h1>
@@ -14,7 +14,7 @@ const Proyecto = ({title, description, tags}) => {
 Proyecto.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    tags: PropTypes.array.isRequired
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 export default Proyecto
