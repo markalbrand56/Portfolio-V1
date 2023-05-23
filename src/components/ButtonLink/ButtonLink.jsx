@@ -1,10 +1,11 @@
 import React from "react"
-import styles from "./ButtonLink.module.css"
 import PropTypes from "prop-types"
+import styles from "./ButtonLink.module.css"
 
 function ButtonLink({ url, icon }) {
     return (
         <a href={url} className={styles.ButtonLink}>
+            Code
             <img src={icon} alt="i" />
         </a>
     )

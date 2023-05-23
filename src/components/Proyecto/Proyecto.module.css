@@ -32,10 +32,6 @@
 .Content p {
     width: 90%;
     text-align: justify;
-
-    border: darkblue 2px solid;
-
-    padding: 1em;
 }
 
 .Tags {
