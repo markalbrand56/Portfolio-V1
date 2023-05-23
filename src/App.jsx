@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
 import projects from "./assets/projects"
+import TechStack from "./components/TechStack/TechStack"
 
 function App() {
     return (
@@ -9,7 +10,7 @@ function App() {
             {/* Nav ¿? */}
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
-            <p>Tech</p>
+            <TechStack />
             {projects.map((project) => (
                 <Proyecto
                     key={project.title}
