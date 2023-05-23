@@ -20,6 +20,8 @@ function App() {
                     url={project.url}
                 />
             ))}
+            {/* TODO Education */}
+            {/* TODO About me: cards */}
         </div>
     )
 }
