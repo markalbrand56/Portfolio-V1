@@ -8,7 +8,7 @@ function App() {
             <p>Prueba</p>
             <Proyecto
                 title="Prueba"
-                tags={["JavaScript"]}
+                tags={["JavaScript", "React", "CSS", "HTML", "Git"]}
                 url="https://github.com/markalbrand56/STW-Laboratorio-9"
                 description="Prueba"
                 icon=""
