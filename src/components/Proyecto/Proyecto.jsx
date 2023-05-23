@@ -8,13 +8,15 @@ function Proyecto({ title, description, tags, url }) {
     return (
         <div className={styles.Container}>
             <h1>{title}</h1>
-            <p>{description}</p>
-            <div className={styles.Tags}>
-                {tags.map((tag) => (
-                    <span key={tag} className={styles.Tag}>
-                        {tag}
-                    </span>
-                ))}
+            <div className={styles.Content}>
+                <div className={styles.Tags}>
+                    {tags.map((tag) => (
+                        <span key={tag} className={styles.Tag}>
+                            {tag}
+                        </span>
+                    ))}
+                </div>
+                <p>{description}</p>
             </div>
             <ButtonLink url={url} icon={illustrations.githubLogin} />
         </div>

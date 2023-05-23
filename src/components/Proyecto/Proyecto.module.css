@@ -20,6 +20,24 @@
     padding: 0;
 }
 
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.Content p {
+    width: 90%;
+    text-align: justify;
+
+    border: darkblue 2px solid;
+
+    padding: 1em;
+}
+
 .Tags {
     display: flex;
     flex-direction: row;
@@ -27,9 +45,8 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-    width: 100%;
-
-    margin-bottom: 20px;
+    width: 70%;
+    margin: 1em 0;
 }
 
 .Tag{
