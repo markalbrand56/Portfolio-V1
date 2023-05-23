@@ -1,12 +1,15 @@
 import React from "react"
-import "./App.css"
+import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
 import projects from "./assets/projects"
 
 function App() {
     return (
-        <div className="App">
-            <p>Prueba</p>
+        <div className={styles.App}>
+            {/* Nav ¿? */}
+            <h1 className={styles.Name}>Mark Albrand</h1>
+            <h2>Backend Developer</h2>
+            <p>Tech</p>
             {projects.map((project) => (
                 <Proyecto
                     key={project.title}
