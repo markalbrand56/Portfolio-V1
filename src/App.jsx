@@ -21,6 +21,8 @@ function App() {
                 />
             ))}
             {/* TODO Education */}
+            {/* TODO Certificates */}
+            {/* TODO Experience */}
             {/* TODO About me: cards */}
         </div>
     )
