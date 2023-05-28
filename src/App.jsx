@@ -12,7 +12,10 @@ function App() {
             {/* Nav ¿? */}
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
+
             <TechStack />
+
+            <h1>Proyectos</h1>
             <div className={styles.Projects}>
                 {projects.map((project) => (
                     <Proyecto
@@ -24,6 +27,8 @@ function App() {
                     />
                 ))}
             </div>
+
+            <h1>Educación</h1>
             <div className={styles.Education}>
                 {education.map((edu) => (
                     <Education
@@ -34,6 +39,7 @@ function App() {
                     />
                 ))}
             </div>
+
             {/* TODO Certificates */}
             {/* TODO Experience */}
             {/* TODO About me: cards */}
