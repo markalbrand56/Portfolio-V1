@@ -1,3 +1,5 @@
+const devIcons = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/"
+
 const education = [
     {
         title: "Universidad del Valle de Guatemala",
@@ -42,8 +44,6 @@ const projects = [
     },
 ]
 
-const devIcons = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/"
-
 const techStack = [
     {
         name: "Python",
@@ -66,7 +66,7 @@ const techStack = [
         icon: `${devIcons}java/java-original.svg`,
     },
     {
-        name: "Javascript",
+        name: "JavaScript",
         icon: `${devIcons}javascript/javascript-original.svg`,
     },
     {
@@ -111,6 +111,15 @@ const techStack = [
     },
 ]
 
+const certificates = [
+    {
+        title: "PCAP: Programming Essentials in Python",
+        description: "CISCO Networking Academy - Universidad Galileo",
+        year: "2019",
+    },
+]
+
 export { projects }
 export { education }
 export { techStack }
+export { certificates }

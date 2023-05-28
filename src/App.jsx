@@ -3,7 +3,7 @@ import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
-import { education, projects } from "./assets/data"
+import { education, projects, certificates } from "./assets/data"
 
 function App() {
     return (
@@ -39,7 +39,17 @@ function App() {
                 ))}
             </div>
 
-            {/* TODO Certificates */}
+            <h1>Certificados</h1>
+            <div className={styles.Education}>
+                {certificates.map((cert) => (
+                    <Education
+                        key={cert.title}
+                        title={cert.title}
+                        description={cert.description}
+                        year={cert.year}
+                    />
+                ))}
+            </div>
             {/* TODO Experience */}
             {/* TODO About me: cards */}
         </div>

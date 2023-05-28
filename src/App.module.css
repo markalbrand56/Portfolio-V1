@@ -24,6 +24,10 @@
 
 }
 
+h1 {
+    margin: 2em 0 0.5em 0;
+}
+
 .Projects {
     display: flex;
     flex-direction: column;
@@ -44,5 +48,6 @@
     flex-wrap: wrap;
 
     width: 80%;
-
+    margin: 0;
+    padding: 0;
 }
