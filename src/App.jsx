@@ -40,7 +40,7 @@ function App() {
             </div>
 
             <h1>Certificados</h1>
-            <div className={styles.Education}>
+            <div className={styles.Certificates}>
                 {certificates.map((cert) => (
                     <Education
                         key={cert.title}
