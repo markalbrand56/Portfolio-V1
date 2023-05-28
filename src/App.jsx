@@ -11,15 +11,17 @@ function App() {
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
             <TechStack />
-            {projects.map((project) => (
-                <Proyecto
-                    key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    tags={project.tags}
-                    url={project.url}
-                />
-            ))}
+            <div className={styles.Proyects}>
+                {projects.map((project) => (
+                    <Proyecto
+                        key={project.title}
+                        title={project.title}
+                        description={project.description}
+                        tags={project.tags}
+                        url={project.url}
+                    />
+                ))}
+            </div>
             {/* TODO Education */}
             {/* TODO Certificates */}
             {/* TODO Experience */}
