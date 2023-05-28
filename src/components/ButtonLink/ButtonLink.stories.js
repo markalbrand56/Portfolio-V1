@@ -1,4 +1,5 @@
 import ButtonLink from "./ButtonLink"
+import illustrations from "../../assets/illustrations"
 
 export default {
     title: "Components/ButtonLink",
@@ -7,10 +8,10 @@ export default {
     argTypes: {},
 }
 
-export const ButtonLinkExample = {
+export const Github = {
     args: {
-        text: "Button Link",
+        text: "Github",
         url: "https://www.google.com",
-        icon: "",
+        icon: illustrations.githubLogin,
     },
 }

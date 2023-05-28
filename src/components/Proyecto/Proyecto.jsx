@@ -17,7 +17,11 @@ function Proyecto({ title, description, tags, url }) {
                     ))}
                 </div>
                 <p>{description}</p>
-                <ButtonLink url={url} icon={illustrations.githubLogin} />
+                <ButtonLink
+                    text="GitHub"
+                    url={url}
+                    icon={illustrations.githubLogin}
+                />
             </div>
         </div>
     )
