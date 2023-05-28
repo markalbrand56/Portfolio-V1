@@ -4,7 +4,7 @@ import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
 import { education, projects, certificates, experience } from "./assets/data"
-import Experience from "./components/Experience/Experience.jsx";
+import Experience from "./components/Experience/Experience"
 
 function App() {
     return (
