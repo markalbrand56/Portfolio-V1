@@ -1,0 +1,43 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    width: min(75%, 500px);
+    padding: 2em;
+    margin: 1em;
+    aspect-ratio: 2;
+
+    outline: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.Title {
+    margin: 0;
+    padding: 0;
+}
+
+.Year {
+    margin: 0.5em;
+    padding: 0;
+
+    color: #7b7a7a;
+}
+
+.Description {
+    margin: 0.5em;
+    padding: 0;
+    width: 90%;
+    text-align: justify;
+}

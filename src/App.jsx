@@ -3,6 +3,8 @@ import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
 import projects from "./assets/projects"
 import TechStack from "./components/TechStack/TechStack"
+import Education from "./components/Education/Education"
+import education from "./assets/education"
 
 function App() {
     return (
@@ -11,7 +13,7 @@ function App() {
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
             <TechStack />
-            <div className={styles.Proyects}>
+            <div className={styles.Projects}>
                 {projects.map((project) => (
                     <Proyecto
                         key={project.title}
@@ -22,7 +24,16 @@ function App() {
                     />
                 ))}
             </div>
-            {/* TODO Education */}
+            <div className={styles.Education}>
+                {education.map((edu) => (
+                    <Education
+                        key={edu.title}
+                        title={edu.title}
+                        description={edu.description}
+                        year={edu.year}
+                    />
+                ))}
+            </div>
             {/* TODO Certificates */}
             {/* TODO Experience */}
             {/* TODO About me: cards */}

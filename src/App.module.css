@@ -24,7 +24,7 @@
 
 }
 
-.Proyects {
+.Projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,4 +34,15 @@
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.Education {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 80%;
+
 }
