@@ -1,10 +1,9 @@
 import React from "react"
 import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
-import projects from "./assets/projects"
 import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
-import education from "./assets/education"
+import { education, projects } from "./assets/data"
 
 function App() {
     return (

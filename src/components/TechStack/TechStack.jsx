@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import styles from "./TechStack.module.css";
-import techStack from "../../assets/techStack";
+import React, { useState } from "react"
+import styles from "./TechStack.module.css"
+import { techStack } from "../../assets/data"
 
 function TechStack() {
     const [hoveredTech, setHoveredTech] = useState("")
