@@ -4,10 +4,11 @@
     justify-content: center;
     align-items: start;
 
-    width: min(75%, 500px);
-    padding: 2em;
+    width: min(90%, 1000px);
+    height: 100%;
+
+    padding: 3em;
     margin: 1em;
-    aspect-ratio: 2;
 
     outline: 2px solid black;
     border-radius: 5px;

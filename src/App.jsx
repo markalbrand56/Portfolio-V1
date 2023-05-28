@@ -3,7 +3,8 @@ import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
-import { education, projects, certificates } from "./assets/data"
+import { education, projects, certificates, experience } from "./assets/data"
+import Experience from "./components/Experience/Experience.jsx";
 
 function App() {
     return (
@@ -50,7 +51,19 @@ function App() {
                     />
                 ))}
             </div>
-            {/* TODO Experience */}
+
+            <h1>Experiencia laboral</h1>
+            <div className={styles.Experience}>
+                {experience.map((exp) => (
+                    <Experience
+                        key={exp.title}
+                        title={exp.title}
+                        description={exp.description}
+                        year={exp.year}
+                    />
+                ))}
+            </div>
+
             {/* TODO About me: cards */}
         </div>
     )
