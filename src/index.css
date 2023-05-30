@@ -4,10 +4,25 @@
     align-items: center;
 
     /* Ver 1*/
-    --text: #4D57D6;
     --main: white;
+
+    --primary: #4D57D6;
+    --primary-2: #999FEE;
+    --primary-3: #6E76E2;
+    --primary-4: #2B37CE;
+    --primary-5: #131FAC;
+
     --secondary: #35D2A3;
+    --secondary-2: #8AECCF;
+    --secondary-3: #5ADFB7;
+    --secondary-4: #10C891;
+    --secondary-5: #00A472;
+
     --accent: #FF4141;
+    --accent-2: #FF9696;
+    --accent-3: #FF6767;
+    --accent-4: #FF1515;
+    --accent-5: #F80000;
 
     /* Ver 2 */
     /*--text: #040F9F;*/
