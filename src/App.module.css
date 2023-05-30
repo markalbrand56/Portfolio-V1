@@ -144,14 +144,22 @@ h1 {
     background-size: cover;
 }
 
-.layer1 {
+.waveTopLarge1 {
     background-image: url("assets/wave-top-sec-large.svg");
 }
 
-.layer2 {
+.waveBottomLarge1 {
     background-image: url("assets/wave-bottom-sec-large.svg");
 }
 
-.layer3 {
+.waveBottomSmall1 {
     background-image: url("assets/wave-bottom-sec-small.svg");
+}
+
+.layeredTopLarge1 {
+    background-image: url("assets/layered-wave-top-sec-large.svg");
+}
+
+.layeredBottomLarge1 {
+    background-image: url("assets/layered-wave-bottom-sec-large.svg");
 }

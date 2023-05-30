@@ -7,21 +7,21 @@ import { education, projects, certificates, experience } from "./assets/data"
 import Experience from "./components/Experience/Experience"
 
 function App() {
-    const spacerClass1 = `${styles.SpacerLarge} ${styles.layer1}`
-    const spacerClass2 = `${styles.SpacerLarge} ${styles.layer2}`
-    const spacerClass3 = `${styles.SpacerSmall} ${styles.layer3}`
+    const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
+    const waveBottomLarge = `${styles.SpacerLarge} ${styles.waveBottomLarge1}`
+    const waveBottomSmall = `${styles.SpacerSmall} ${styles.waveBottomSmall1}`
 
     return (
         <div className={styles.App}>
             <div className={styles.Navbar}>Navigation</div>
-            <div className={spacerClass3} />
+            <div className={waveBottomSmall} />
 
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
 
             <TechStack />
 
-            <div className={spacerClass1} />
+            <div className={waveTopLarge} />
             <div className={styles.Projects}>
                 <h1 className={styles.Titulo1}>Proyectos</h1>
                 {projects.map((project) => (
@@ -35,7 +35,7 @@ function App() {
                 ))}
             </div>
 
-            <div className={spacerClass2} />
+            <div className={waveBottomLarge} />
 
             <h1 className={styles.Titulo2}>Educación</h1>
             <div className={styles.Education}>
@@ -72,7 +72,7 @@ function App() {
                     />
                 ))}
             </div>
-            <div className={spacerClass1} />
+            <div className={waveTopLarge} />
 
             {/* TODO About me: cards */}
             <div className={styles.Footer}>Footer</div>
