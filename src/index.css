@@ -70,3 +70,8 @@ body {
     background-color: var(--primary-2);
     border-radius: 10px;
 }
+
+::selection{
+    background-color: var(--accent-2);
+    color: var(--main);
+}
