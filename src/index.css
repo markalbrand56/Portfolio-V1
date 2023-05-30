@@ -53,3 +53,20 @@ body {
     background-color: var(--main);
     margin: 0;
 }
+
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece{
+    background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-2);
+    border-radius: 10px;
+}
