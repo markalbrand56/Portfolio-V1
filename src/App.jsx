@@ -7,17 +7,22 @@ import { education, projects, certificates, experience } from "./assets/data"
 import Experience from "./components/Experience/Experience"
 
 function App() {
+    const spacerClass1 = `${styles.Spacer} ${styles.layer1}`
+    const spacerClass2 = `${styles.Spacer} ${styles.layer2}`
+
     return (
         <div className={styles.App}>
             <div className={styles.Navbar}>Navigation</div>
+            <div className={spacerClass2} />
 
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
 
             <TechStack />
 
-            <h1>Proyectos</h1>
+            <div className={spacerClass1} />
             <div className={styles.Projects}>
+                <h1>Proyectos</h1>
                 {projects.map((project) => (
                     <Proyecto
                         key={project.title}
@@ -28,6 +33,8 @@ function App() {
                     />
                 ))}
             </div>
+
+            <div className={spacerClass2} />
 
             <h1>Educación</h1>
             <div className={styles.Education}>
@@ -64,6 +71,7 @@ function App() {
                     />
                 ))}
             </div>
+            <div className={spacerClass1} />
 
             {/* TODO About me: cards */}
             <div className={styles.Footer}>Footer</div>

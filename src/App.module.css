@@ -107,3 +107,19 @@ h1 {
 
     background-color: var(--secondary);
 }
+
+.Spacer {
+    aspect-ratio: 6;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("assets/wave-haikei (3).svg");
+}
+
+.layer2 {
+    background-image: url("assets/wave-haikei (4).svg");
+}
