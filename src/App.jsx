@@ -16,20 +16,18 @@ function App() {
             <nav className={styles.Navbar}>
                 <div className={styles.NavLogo}>Logo</div>
                 <div className={styles.NavLinks}>
-                    <ul>
-                        <li>
-                            <a className={styles.NavLink} href="#projects">Proyectos</a>
-                        </li>
-                        <li>
-                            <a className={styles.NavLink} href="#education">Educación</a>
-                        </li>
-                        <li>
-                            <a className={styles.NavLink} href="#certificates">Certificados</a>
-                        </li>
-                        <li>
-                            <a className={styles.NavLink} href="#experience">Experiencia</a>
-                        </li>
-                    </ul>
+                    <a className={styles.NavLink} href="#projects">
+                        Proyectos
+                    </a>
+                    <a className={styles.NavLink} href="#education">
+                        Educación
+                    </a>
+                    <a className={styles.NavLink} href="#certificates">
+                        Certificados
+                    </a>
+                    <a className={styles.NavLink} href="#experience">
+                        Experiencia
+                    </a>
                 </div>
             </nav>
             <div className={waveBottomSmall} />
