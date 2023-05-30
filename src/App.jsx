@@ -5,6 +5,7 @@ import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
 import { education, projects, certificates, experience } from "./assets/data"
 import Experience from "./components/Experience/Experience"
+import { Link, animateScroll as scroll } from "react-scroll"
 
 function App() {
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
@@ -16,18 +17,38 @@ function App() {
             <nav className={styles.Navbar}>
                 <div className={styles.NavLogo}>Logo</div>
                 <div className={styles.NavLinks}>
-                    <a className={styles.NavLink} href="#projects">
+                    <Link
+                        className={styles.NavLink}
+                        to="projects"
+                        smooth
+                        duration={500}
+                    >
                         Proyectos
-                    </a>
-                    <a className={styles.NavLink} href="#education">
+                    </Link>
+                    <Link
+                        className={styles.NavLink}
+                        to="education"
+                        smooth
+                        duration={500}
+                    >
                         Educación
-                    </a>
-                    <a className={styles.NavLink} href="#certificates">
+                    </Link>
+                    <Link
+                        className={styles.NavLink}
+                        to="certificates"
+                        smooth
+                        duration={500}
+                    >
                         Certificados
-                    </a>
-                    <a className={styles.NavLink} href="#experience">
+                    </Link>
+                    <Link
+                        className={styles.NavLink}
+                        to="experience"
+                        smooth
+                        duration={500}
+                    >
                         Experiencia
-                    </a>
+                    </Link>
                 </div>
             </nav>
             <div className={waveBottomSmall} />
