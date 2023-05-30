@@ -22,7 +22,7 @@ function App() {
             <TechStack />
 
             <div className={waveTopLarge} />
-            <div className={styles.Projects}>
+            <section className={styles.Projects}>
                 <h1 className={styles.Titulo1}>Proyectos</h1>
                 {projects.map((project) => (
                     <Proyecto
@@ -33,12 +33,12 @@ function App() {
                         url={project.url}
                     />
                 ))}
-            </div>
+            </section>
 
             <div className={waveBottomLarge} />
 
-            <h1 className={styles.Titulo2}>Educación</h1>
-            <div className={styles.Education}>
+            <section className={styles.Education}>
+                <h1 className={styles.Titulo2}>Educación</h1>
                 {education.map((edu) => (
                     <Education
                         key={edu.title}
@@ -47,10 +47,10 @@ function App() {
                         year={edu.year}
                     />
                 ))}
-            </div>
+            </section>
 
-            <h1 className={styles.Titulo2}>Certificados</h1>
-            <div className={styles.Certificates}>
+            <section className={styles.Certificates}>
+                <h1 className={styles.Titulo2}>Certificados</h1>
                 {certificates.map((cert) => (
                     <Education
                         key={cert.title}
@@ -59,10 +59,10 @@ function App() {
                         year={cert.year}
                     />
                 ))}
-            </div>
+            </section>
 
             <h1 className={styles.Titulo2}>Experiencia laboral</h1>
-            <div className={styles.Experience}>
+            <section className={styles.Experience}>
                 {experience.map((exp) => (
                     <Experience
                         key={exp.title}
@@ -71,7 +71,7 @@ function App() {
                         year={exp.year}
                     />
                 ))}
-            </div>
+            </section>
             <div className={waveTopLarge} />
 
             {/* TODO About me: cards */}
