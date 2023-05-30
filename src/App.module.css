@@ -78,6 +78,12 @@
     color: var(--primary);
 }
 
+@media screen and (max-width: 500px) {
+    .Name {
+        font-size: 5em;
+    }
+}
+
 h1 {
     margin: 2em 0 0.5em 0;
 }
