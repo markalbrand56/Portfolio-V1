@@ -22,7 +22,7 @@ function App() {
 
             <div className={spacerClass1} />
             <div className={styles.Projects}>
-                <h1>Proyectos</h1>
+                <h1 className={styles.Titulo1}>Proyectos</h1>
                 {projects.map((project) => (
                     <Proyecto
                         key={project.title}
@@ -36,7 +36,7 @@ function App() {
 
             <div className={spacerClass2} />
 
-            <h1>Educación</h1>
+            <h1 className={styles.Titulo2}>Educación</h1>
             <div className={styles.Education}>
                 {education.map((edu) => (
                     <Education
@@ -48,7 +48,7 @@ function App() {
                 ))}
             </div>
 
-            <h1>Certificados</h1>
+            <h1 className={styles.Titulo2}>Certificados</h1>
             <div className={styles.Certificates}>
                 {certificates.map((cert) => (
                     <Education
@@ -60,7 +60,7 @@ function App() {
                 ))}
             </div>
 
-            <h1>Experiencia laboral</h1>
+            <h1 className={styles.Titulo2}>Experiencia laboral</h1>
             <div className={styles.Experience}>
                 {experience.map((exp) => (
                     <Experience

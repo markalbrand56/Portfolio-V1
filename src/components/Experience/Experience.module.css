@@ -27,13 +27,15 @@
 .Title {
     margin: 0;
     padding: 0;
+
+    color: var(--primary-3);
 }
 
 .Year {
     margin: 1em 0.5em 0 0.5em;
     padding: 0;
 
-    color: #7b7a7a;
+    color: var(--secondary-5);
 }
 
 .Description {

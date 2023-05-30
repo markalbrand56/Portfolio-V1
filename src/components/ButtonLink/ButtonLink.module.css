@@ -16,8 +16,8 @@
 }
 
 .ButtonLink:hover{
-    background-color: black;
-    color: white;
+    background-color: #FF6767;
+    color: black;
 }
 
 .ButtonLink img {

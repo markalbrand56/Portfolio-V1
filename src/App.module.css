@@ -1,6 +1,6 @@
 * {
     /*outline: 1px red dashed;*/
-    color: var(--text);
+    /*color: var(--primary);*/
 }
 #root {
 }
@@ -37,11 +37,31 @@
     padding: 0;
     text-align: center;
 
-
+    color: var(--primary);
 }
 
 h1 {
     margin: 2em 0 0.5em 0;
+}
+
+.Titulo1{
+    font-size: 3em;
+    font-weight: 500;
+    color: var(--primary-5);
+    text-transform: uppercase;
+
+    width: 100%;
+    text-align: center;
+}
+
+.Titulo2{
+    font-size: 3em;
+    font-weight: 500;
+    color: var(--primary-3);
+    text-transform: uppercase;
+
+    width: 100%;
+    text-align: center;
 }
 
 .Projects {
