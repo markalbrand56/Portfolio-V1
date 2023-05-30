@@ -32,8 +32,15 @@ function App() {
             </nav>
             <div className={waveBottomSmall} />
 
-            <h1 className={styles.Name}>Mark Albrand</h1>
-            <h2>Backend Developer</h2>
+            <section className={styles.Hero}>
+                <p>Hola! Mi nombre es</p>
+                <h1 className={styles.Name}>Mark Albrand</h1>
+                <h2>Backend Developer</h2>
+                <span>
+                    Soy un estudiante en la carrera de Ingeniería en Ciencias de
+                    la Computación, con experiencia en desarrollo web y backend.
+                </span>
+            </section>
 
             <TechStack />
 
