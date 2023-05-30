@@ -7,13 +7,14 @@ import { education, projects, certificates, experience } from "./assets/data"
 import Experience from "./components/Experience/Experience"
 
 function App() {
-    const spacerClass1 = `${styles.Spacer} ${styles.layer1}`
-    const spacerClass2 = `${styles.Spacer} ${styles.layer2}`
+    const spacerClass1 = `${styles.SpacerLarge} ${styles.layer1}`
+    const spacerClass2 = `${styles.SpacerLarge} ${styles.layer2}`
+    const spacerClass3 = `${styles.SpacerSmall} ${styles.layer3}`
 
     return (
         <div className={styles.App}>
             <div className={styles.Navbar}>Navigation</div>
-            <div className={spacerClass2} />
+            <div className={spacerClass3} />
 
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
