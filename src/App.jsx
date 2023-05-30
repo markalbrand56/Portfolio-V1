@@ -10,6 +10,7 @@ function App() {
     return (
         <div className={styles.App}>
             <div className={styles.Navbar}>Navigation</div>
+
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
 
@@ -65,6 +66,7 @@ function App() {
             </div>
 
             {/* TODO About me: cards */}
+            <div className={styles.Footer}>Footer</div>
         </div>
     )
 }
