@@ -2,6 +2,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Ver 1*/
+    --text: #4D57D6;
+    --main: white;
+    --secondary: #35D2A3;
+    --accent: #FF4141;
+
+    /* Ver 2 */
+    /*--text: #040F9F;*/
+    /*--main: black;*/
+    /*--secondary: #00986A;*/
+    /*--accent: #E60000;*/
+
+    /* Ver 3 */
+    /*--text: #1e3462;*/
+    /*--main: black;*/
+    /*--secondary: #1F573F;*/
+    /*--accent: #7A2C33;*/
+
+    /* Ver 4 */
+    /*--text: #4C59D6;*/
+    /*--main: white;*/
+    /*--secondary: #7B45D5;*/
+    /*--accent: #FFCB41;*/
+
 }
 
 body {
@@ -9,4 +34,6 @@ body {
     width: 100vw;
 
     font-family: 'Rubik', sans-serif;
+
+    background-color: var(--main);
 }

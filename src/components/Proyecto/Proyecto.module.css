@@ -11,6 +11,7 @@
     outline: 2px solid black;
     border-radius: 5px;
     font-family: 'Rubik', sans-serif;
+    background-color: var(--main);
 }
 
 .Container h1 {
@@ -41,6 +42,7 @@
 
     width: 70%;
     margin: 1em 0;
+
 }
 
 .Tag{
@@ -51,7 +53,7 @@
     border: 2px solid #000000;
     border-radius: 15px;
     font-weight: 500;
-    background-color: #e2edff;
+    background-color: var(--accent);
 }
 
 .urlButton {
