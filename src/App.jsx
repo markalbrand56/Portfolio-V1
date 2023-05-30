@@ -1,11 +1,11 @@
 import React from "react"
+import { Link } from "react-scroll"
 import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
 import { education, projects, certificates, experience } from "./assets/data"
 import Experience from "./components/Experience/Experience"
-import { Link, animateScroll as scroll } from "react-scroll"
 
 function App() {
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
