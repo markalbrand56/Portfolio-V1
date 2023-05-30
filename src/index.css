@@ -36,4 +36,5 @@ body {
     font-family: 'Rubik', sans-serif;
 
     background-color: var(--main);
+    margin: 0;
 }

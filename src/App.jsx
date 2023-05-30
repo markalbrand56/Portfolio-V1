@@ -9,7 +9,7 @@ import Experience from "./components/Experience/Experience"
 function App() {
     return (
         <div className={styles.App}>
-            {/* Nav ¿? */}
+            <div className={styles.Navbar}>Navigation</div>
             <h1 className={styles.Name}>Mark Albrand</h1>
             <h2>Backend Developer</h2>
 
