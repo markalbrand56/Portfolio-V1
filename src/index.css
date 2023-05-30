@@ -23,25 +23,6 @@
     --accent-3: #FF6767;
     --accent-4: #FF1515;
     --accent-5: #F80000;
-
-    /* Ver 2 */
-    /*--text: #040F9F;*/
-    /*--main: black;*/
-    /*--secondary: #00986A;*/
-    /*--accent: #E60000;*/
-
-    /* Ver 3 */
-    /*--text: #1e3462;*/
-    /*--main: black;*/
-    /*--secondary: #5B9279;*/
-    /*--accent: #A52422;*/
-
-    /* Ver 4 */
-    /*--text: #4C59D6;*/
-    /*--main: white;*/
-    /*--secondary: #7B45D5;*/
-    /*--accent: #FFCB41;*/
-
 }
 
 body {
