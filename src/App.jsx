@@ -6,6 +6,8 @@ import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
 import { education, projects, certificates, experience } from "./assets/data"
 import Experience from "./components/Experience/Experience"
+import ButtonLink from "./components/ButtonLink/ButtonLink.jsx";
+import illustrations from "./assets/illustrations.js";
 
 function App() {
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
@@ -61,6 +63,11 @@ function App() {
                     Soy un estudiante en la carrera de Ingeniería en Ciencias de
                     la Computación, con experiencia en desarrollo web y backend.
                 </span>
+                <ButtonLink
+                    text="GitHub"
+                    icon={illustrations.githubLogin}
+                    url="https://github.com/markalbrand56"
+                />
             </section>
 
             <TechStack />
