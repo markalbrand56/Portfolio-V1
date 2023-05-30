@@ -13,7 +13,25 @@ function App() {
 
     return (
         <div className={styles.App}>
-            <div className={styles.Navbar}>Navigation</div>
+            <nav className={styles.Navbar}>
+                <div className={styles.NavLogo}>Logo</div>
+                <div className={styles.NavLinks}>
+                    <ul>
+                        <li>
+                            <a className={styles.NavLink} href="#projects">Proyectos</a>
+                        </li>
+                        <li>
+                            <a className={styles.NavLink} href="#education">Educación</a>
+                        </li>
+                        <li>
+                            <a className={styles.NavLink} href="#certificates">Certificados</a>
+                        </li>
+                        <li>
+                            <a className={styles.NavLink} href="#experience">Experiencia</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div className={waveBottomSmall} />
 
             <h1 className={styles.Name}>Mark Albrand</h1>
@@ -22,7 +40,7 @@ function App() {
             <TechStack />
 
             <div className={waveTopLarge} />
-            <section className={styles.Projects}>
+            <section id="projects" className={styles.Projects}>
                 <h1 className={styles.Titulo1}>Proyectos</h1>
                 {projects.map((project) => (
                     <Proyecto
@@ -37,7 +55,7 @@ function App() {
 
             <div className={waveBottomLarge} />
 
-            <section className={styles.Education}>
+            <section id="education" className={styles.Education}>
                 <h1 className={styles.Titulo2}>Educación</h1>
                 {education.map((edu) => (
                     <Education
@@ -49,7 +67,7 @@ function App() {
                 ))}
             </section>
 
-            <section className={styles.Certificates}>
+            <section id="certificates" className={styles.Certificates}>
                 <h1 className={styles.Titulo2}>Certificados</h1>
                 {certificates.map((cert) => (
                     <Education
@@ -61,8 +79,8 @@ function App() {
                 ))}
             </section>
 
-            <h1 className={styles.Titulo2}>Experiencia laboral</h1>
-            <section className={styles.Experience}>
+            <section id="experience" className={styles.Experience}>
+                <h1 className={styles.Titulo2}>Experiencia laboral</h1>
                 {experience.map((exp) => (
                     <Experience
                         key={exp.title}
