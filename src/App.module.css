@@ -127,8 +127,9 @@ h1 {
     color: var(--primary-5);
     text-transform: uppercase;
 
-    width: 100%;
+    width: 80%;
     text-align: center;
+    overflow-wrap: break-word;
 }
 
 .Titulo2{
@@ -137,8 +138,9 @@ h1 {
     color: var(--primary-3);
     text-transform: uppercase;
 
-    width: 100%;
+    width: 80%;
     text-align: center;
+    overflow-wrap: break-word;
 }
 
 @media screen and (max-width: 500px) {
