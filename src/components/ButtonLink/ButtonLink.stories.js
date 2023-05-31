@@ -10,8 +10,18 @@ export default {
 
 export const Github = {
     args: {
-        text: "Github",
+        children: "Github",
         url: "https://www.google.com",
         icon: illustrations.githubLogin,
+        theme: "github",
     },
+}
+
+export const LinkedIn = {
+    args: {
+        children: "LinkedIn",
+        url: "https://www.google.com",
+        icon: illustrations.linkedInLogin,
+        theme: "linkedin",
+    }
 }

@@ -4,12 +4,14 @@
     align-items: center;
     justify-content: center;
 
-    width: max-content;
+    width: min(100%, 120px);
+    aspect-ratio: 3;
+    padding: 0.5em 0.5em;
+    margin: 1em;
 
     background-color: var(--secondary);
     color: black;
     text-decoration: none;
-    padding: 0.5em 0.5em;
 
     border-radius: 10px;
     border: 2px solid #000000;
@@ -26,4 +28,44 @@
 }
 
 .ButtonLink p {
+}
+
+.primary{
+    background-color: var(--primary);
+    color: white;
+}
+
+.primary:hover{
+    background-color: var(--accent-2);
+    color: white;
+}
+
+.secondary{
+    background-color: var(--secondary);
+    color: black;
+}
+
+.secondary:hover{
+    background-color: var(--accent-2);
+    color: black;
+}
+
+.github{
+    background-color: #a3a3a3;
+    color: black;
+}
+
+.github:hover{
+    background-color: var(--accent-2);
+    color: black;
+}
+
+.linkedin{
+    background-color: #0077b5;
+    color: white;
+}
+
+.linkedin:hover{
+    background-color: var(--primary-2);
+    color: white;
 }

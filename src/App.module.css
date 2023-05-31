@@ -150,6 +150,18 @@ h1 {
     }
 }
 
+.Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: min(100%, 750px);
+    margin: 0;
+    padding: 0;
+}
+
 .Projects {
     display: flex;
     flex-direction: column;

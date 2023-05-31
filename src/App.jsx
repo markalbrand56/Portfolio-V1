@@ -63,11 +63,23 @@ function App() {
                     Soy un estudiante en la carrera de Ingeniería en Ciencias de
                     la Computación, con experiencia en desarrollo web y backend.
                 </span>
-                <ButtonLink
-                    text="GitHub"
-                    icon={illustrations.githubLogin}
-                    url="https://github.com/markalbrand56"
-                />
+
+                <div className={styles.Buttons}>
+                    <ButtonLink
+                        icon={illustrations.githubLogin}
+                        url="https://github.com/markalbrand56"
+                        theme="github"
+                    >
+                        GitHub
+                    </ButtonLink>
+                    <ButtonLink
+                        icon={illustrations.linkedInLogin}
+                        url="https://www.linkedin.com/in/mark-alexander-albrand-mendoza/"
+                        theme="linkedin"
+                    >
+                        LinkedIn
+                    </ButtonLink>
+                </div>
             </section>
 
             <TechStack />
