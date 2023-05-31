@@ -4,12 +4,12 @@ const education = [
     {
         title: "Universidad del Valle de Guatemala",
         description: "Ingeniería en Ciencias de la Computación y Tecnologías de la Información",
-        year: "2020 - presente",
+        year: "2021 - presente",
     },
     {
         title: "Colegio Bilingüe Vista Hermosa",
         description: "Bachillerato en Ciencias y Letras",
-        year: "2007 - 2019",
+        year: "2007 - 2020",
     },
 ]
 
@@ -66,32 +66,8 @@ const techStack = [
         icon: `${devIcons}java/java-original.svg`,
     },
     {
-        name: "JavaScript",
-        icon: `${devIcons}javascript/javascript-original.svg`,
-    },
-    {
-        name: "PostgreSQL",
-        icon: `${devIcons}postgresql/postgresql-original.svg`,
-    },
-    {
-        name: "MongoDB",
-        icon: `${devIcons}mongodb/mongodb-original.svg`,
-    },
-    {
-        name: "Neo4j",
-        icon: `${devIcons}neo4j/neo4j-original.svg`,
-    },
-    {
-        name: "JetBrains",
-        icon: `${devIcons}jetbrains/jetbrains-original.svg`,
-    },
-    {
-        name: "Git",
-        icon: `${devIcons}git/git-original.svg`,
-    },
-    {
-        name: "Linux",
-        icon: `${devIcons}linux/linux-original.svg`,
+        name: "Kotlin",
+        icon: `${devIcons}kotlin/kotlin-original.svg`,
     },
     {
         name: "HTML",
@@ -102,8 +78,68 @@ const techStack = [
         icon: `${devIcons}css3/css3-original.svg`,
     },
     {
+        name: "JavaScript",
+        icon: `${devIcons}javascript/javascript-original.svg`,
+    },
+    {
         name: "React",
         icon: `${devIcons}react/react-original.svg`,
+    },
+    {
+        name: "Django",
+        icon: `${devIcons}django/django-plain.svg`,
+    },
+    {
+        name: "FastAPI",
+        icon: `${devIcons}fastapi/fastapi-original.svg`,
+    },
+    {
+        name: "Android",
+        icon: `${devIcons}android/android-original.svg`,
+    },
+    {
+        name: "Firebase",
+        icon: `${devIcons}firebase/firebase-plain.svg`,
+    },
+    {
+        name: "PostgreSQL",
+        icon: `${devIcons}postgresql/postgresql-original.svg`,
+    },
+    {
+        name: "MongoDB",
+        icon: `${devIcons}mongodb/mongodb-original.svg`,
+    },
+    {
+        name: "AWS",
+        icon: `${devIcons}amazonwebservices/amazonwebservices-original.svg`,
+    },
+    {
+        name: "Neo4j",
+        icon: `${devIcons}neo4j/neo4j-original.svg`,
+    },
+    {
+        name: "JetBrains",
+        icon: `${devIcons}jetbrains/jetbrains-original.svg`,
+    },
+    {
+        name: "Visual Studio Code",
+        icon: `${devIcons}vscode/vscode-original.svg`,
+    },
+    {
+        name: "Visual Studio",
+        icon: `${devIcons}visualstudio/visualstudio-plain.svg`,
+    },
+    {
+        name: "Git",
+        icon: `${devIcons}git/git-original.svg`,
+    },
+    {
+        name: "Linux",
+        icon: `${devIcons}linux/linux-original.svg`,
+    },
+    {
+        name: "Ubuntu",
+        icon: `${devIcons}ubuntu/ubuntu-plain.svg`,
     },
     {
         name: "Yarn",
