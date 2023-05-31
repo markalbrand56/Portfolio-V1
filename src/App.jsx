@@ -123,9 +123,10 @@ function App() {
                     />
                 ))}
             </section>
-            <div className={waveTopLarge} />
 
             {/* TODO About me: cards */}
+
+            <div className={waveTopLarge} />
             <div className={styles.Footer}>Footer</div>
         </div>
     )
