@@ -1,9 +1,8 @@
-import Github from "./github.png"
-import LinkedIn from "./linkedin_logo.png"
+const devIcons = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/"
 
 const illustrations = {
-    githubLogin: Github,
-    linkedInLogin: LinkedIn,
+    githubLogin: `${devIcons}github/github-original.svg`,
+    linkedInLogin: `${devIcons}linkedin/linkedin-plain.svg`,
 }
 
 export default illustrations
