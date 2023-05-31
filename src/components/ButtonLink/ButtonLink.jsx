@@ -13,11 +13,12 @@ function ButtonLink({ children, url, icon, theme }) {
 }
 
 ButtonLink.defaultProps = {
+    children: "",
     theme: "secondary",
 }
 
 ButtonLink.propTypes = {
-    children: PropTypes.string.isRequired,
+    children: PropTypes.string,
     url: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     theme: PropTypes.oneOf(["primary", "secondary", "github", "linkedin"]),
