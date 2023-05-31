@@ -115,12 +115,6 @@
     .Name {
         font-size: 5em;
     }
-    .Titulo1 {
-        font-size: 2em;
-    }
-    .Titulo2 {
-        font-size: 2em;
-    }
 }
 
 h1 {
@@ -128,8 +122,8 @@ h1 {
 }
 
 .Titulo1{
-    font-size: 3em;
-    font-weight: 500;
+    font-size: 2.7em;
+    font-weight: 700;
     color: var(--primary-5);
     text-transform: uppercase;
 
@@ -138,13 +132,22 @@ h1 {
 }
 
 .Titulo2{
-    font-size: 3em;
-    font-weight: 500;
+    font-size: 2.7em;
+    font-weight: 700;
     color: var(--primary-3);
     text-transform: uppercase;
 
     width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .Titulo1 {
+        font-size: 2em;
+    }
+    .Titulo2 {
+        font-size: 2em;
+    }
 }
 
 .Projects {
