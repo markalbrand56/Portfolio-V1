@@ -115,6 +115,12 @@
     .Name {
         font-size: 5em;
     }
+    .Titulo1 {
+        font-size: 2em;
+    }
+    .Titulo2 {
+        font-size: 2em;
+    }
 }
 
 h1 {
@@ -158,11 +164,11 @@ h1 {
 .Education {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
-    width: 80%;
+    width: 95%;
     margin: 0;
     padding: 0;
 }
@@ -170,11 +176,11 @@ h1 {
 .Certificates {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
-    width: 80%;
+    width: 95%;
     margin: 0;
     padding: 0;
 }
@@ -182,11 +188,11 @@ h1 {
 .Experience {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
-    width: 80%;
+    width: 95%;
     margin: 0;
     padding: 0;
 }
