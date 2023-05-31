@@ -6,8 +6,8 @@ import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
 import { education, projects, certificates, experience } from "./assets/data"
 import Experience from "./components/Experience/Experience"
-import ButtonLink from "./components/ButtonLink/ButtonLink.jsx";
-import illustrations from "./assets/illustrations.js";
+import ButtonLink from "./components/ButtonLink/ButtonLink"
+import illustrations from "./assets/illustrations"
 
 function App() {
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
