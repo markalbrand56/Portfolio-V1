@@ -4,14 +4,21 @@
     justify-content: center;
     align-items: start;
 
-    width: min(75%, 500px);
+    width: min(85%, 500px);
     padding: 2em;
     margin: 1em;
-    aspect-ratio: 2;
+    aspect-ratio: 3;
 
     outline: 2px solid black;
     border-radius: 5px;
     font-family: 'Rubik', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .Container {
+        aspect-ratio: 1;
+        padding: 1em;
+    }
 }
 
 .Content {
