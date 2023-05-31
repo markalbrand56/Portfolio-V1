@@ -23,5 +23,5 @@ export const LinkedIn = {
         url: "https://www.google.com",
         icon: illustrations.linkedInLogin,
         theme: "linkedin",
-    }
+    },
 }
