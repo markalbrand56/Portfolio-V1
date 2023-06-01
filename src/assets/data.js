@@ -51,7 +51,7 @@ const techStack = [
     },
     {
         name: "Go",
-        icon: `${devIcons}go/go-original.svg`,
+        icon: `${devIcons}go/go-original-wordmark.svg`,
     },
     {
         name: "C",
