@@ -12,6 +12,7 @@
     border-radius: 5px;
     font-family: 'Rubik', sans-serif;
     background-color: var(--main);
+    box-shadow: #2f2f2f 0 15px 25px 5px;
 }
 
 .Container h1 {

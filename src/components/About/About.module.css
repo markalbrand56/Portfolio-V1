@@ -15,6 +15,7 @@
     text-align: center;
     border: 2px solid black;
     border-radius: 5px;
+    box-shadow: #2f2f2f 0 15px 25px 5px;
 }
 
 .Image {
