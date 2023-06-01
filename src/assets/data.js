@@ -94,6 +94,10 @@ const techStack = [
         icon: `${devIcons}fastapi/fastapi-original.svg`,
     },
     {
+        name: "Gin Gonic",
+        icon: "https://raw.githubusercontent.com/gin-gonic/logo/master/color.png",
+    },
+    {
         name: "Android",
         icon: `${devIcons}android/android-original.svg`,
     },
