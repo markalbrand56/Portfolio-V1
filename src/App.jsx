@@ -4,11 +4,18 @@ import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
-import { education, projects, certificates, experience, about, me } from "./assets/data"
+import {
+    education,
+    projects,
+    certificates,
+    experience,
+    about,
+    me,
+} from "./assets/data"
 import Experience from "./components/Experience/Experience"
 import ButtonLink from "./components/ButtonLink/ButtonLink"
 import illustrations from "./assets/illustrations"
-import About from "./components/About/About.jsx";
+import About from "./components/About/About"
 
 function App() {
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
@@ -18,7 +25,7 @@ function App() {
     return (
         <div className={styles.App}>
             <nav className={styles.Navbar}>
-                <div className={styles.NavLogo}>Logo</div>
+                <img className={styles.NavLogo} src={illustrations.logo}  alt="Logo"/>
                 <div className={styles.NavLinks}>
                     <Link
                         className={styles.NavLink}
