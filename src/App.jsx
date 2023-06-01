@@ -10,7 +10,6 @@ import {
     certificates,
     experience,
     about,
-    me,
 } from "./assets/data"
 import Experience from "./components/Experience/Experience"
 import ButtonLink from "./components/ButtonLink/ButtonLink"
@@ -25,7 +24,11 @@ function App() {
     return (
         <div className={styles.App}>
             <nav className={styles.Navbar}>
-                <img className={styles.NavLogo} src={illustrations.logo}  alt="Logo"/>
+                <img
+                    className={styles.NavLogo}
+                    src={illustrations.logo}
+                    alt="Logo"
+                />
                 <div className={styles.NavLinks}>
                     <Link
                         className={styles.NavLink}
@@ -156,10 +159,12 @@ function App() {
 
             <section id="about" className={styles.About}>
                 <h1 className={styles.Titulo1}>Acerca de mí</h1>
-                <About about={about} picture={me} />
+                <About about={about} picture={illustrations.me} />
             </section>
 
-            <div className={styles.Footer}>Footer</div>
+            <div className={styles.Footer}>
+                Diseñado y construido por Mark Albrand
+            </div>
         </div>
     )
 }

@@ -19,7 +19,7 @@
 }
 
 .Image {
-    width: min(100%, 300px);
+    width: min(40%, 350px);
     border: 2px solid black;
 }
 
@@ -30,7 +30,6 @@
     justify-content: start;
 
     width: min(100%, 500px);
-    padding: 1em;
     margin: 0;
 }
 
@@ -50,6 +49,7 @@
     }
 
     .Image {
-        width: min(100%, 200px);
+        width: min(90%, 400px);
+        margin: 0.5em 0;
     }
 }

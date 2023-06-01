@@ -169,7 +169,6 @@ const about = [
     "Me encanta descubrir nuevas tecnologías, en mi tiempo libre suelo intentar aprender algo nuevo, ya sea un nuevo lenguaje de programación, un nuevo framework, o cualquier otra cosa que me llame la atención.",
     "Me encanta la música, me considero un Petrolhead (amante de los autos), me gusta practicar la fotografía, y me encanta viajar.",
 ]
-const me = "https://cdn-images.motor.es/image/m/756w504h.webp/fotos-jato/dodge/uploads/dodge-charger-6362ee8e3fab3.jpg"
 
 export { projects }
 export { education }
@@ -177,4 +176,3 @@ export { techStack }
 export { certificates }
 export { experience }
 export { about }
-export { me }
