@@ -4,10 +4,11 @@ import styles from "./App.module.css"
 import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 import Education from "./components/Education/Education"
-import { education, projects, certificates, experience } from "./assets/data"
+import { education, projects, certificates, experience, about, me } from "./assets/data"
 import Experience from "./components/Experience/Experience"
 import ButtonLink from "./components/ButtonLink/ButtonLink"
 import illustrations from "./assets/illustrations"
+import About from "./components/About/About.jsx";
 
 function App() {
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
@@ -50,6 +51,14 @@ function App() {
                         duration={500}
                     >
                         Experiencia
+                    </Link>
+                    <Link
+                        className={styles.NavLink}
+                        to="about"
+                        smooth
+                        duration={500}
+                    >
+                        Acerca de mí
                     </Link>
                 </div>
             </nav>
@@ -136,9 +145,13 @@ function App() {
                 ))}
             </section>
 
-            {/* TODO About me: cards */}
-
             <div className={waveTopLarge} />
+
+            <section id="about" className={styles.About}>
+                <h1 className={styles.Titulo1}>Acerca de mí</h1>
+                <About about={about} picture={me} />
+            </section>
+
             <div className={styles.Footer}>Footer</div>
         </div>
     )

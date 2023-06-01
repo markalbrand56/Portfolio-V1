@@ -214,6 +214,19 @@ h1 {
     padding: 0;
 }
 
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--secondary);
+}
+
 .Footer {
     display: flex;
     flex-direction: row;
