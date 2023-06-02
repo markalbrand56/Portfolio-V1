@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: start;
 
-    width: min(100%, 500px);
+    width: min(50%, 500px);
     margin: 0;
 }
 
