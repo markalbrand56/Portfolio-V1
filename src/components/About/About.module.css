@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
 
-    width: min(80%, 1000px);
+    width: min(75%, 1000px);
     height: 100%;
     padding: 2em;
     margin: 2em 0;
@@ -21,6 +21,7 @@
 .Image {
     width: min(40%, 350px);
     border: 2px solid black;
+    border-radius: 5px;
 }
 
 .TextContainer {
@@ -51,5 +52,8 @@
     .Image {
         width: min(90%, 400px);
         margin: 0.5em 0;
+    }
+    .Text {
+        font-size: 1.1rem;
     }
 }
