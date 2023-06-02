@@ -15,7 +15,7 @@
 
 .Navbar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
@@ -28,7 +28,7 @@
 }
 
 .NavLogo {
-    margin: 1em;
+    margin: 0.5em 0;
     width: min(35%, 100px);
 }
 
@@ -38,9 +38,8 @@
     justify-content: end;
     align-items: center;
 
-    width: 65%;
-    /*height: 100%;*/
-    margin: 0;
+    width: max-content;
+    margin: 1em 0 0 0;
     padding: 0;
 }
 

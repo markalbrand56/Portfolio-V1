@@ -43,7 +43,7 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .Container {
         flex-direction: column;
         padding: 1em;
@@ -52,6 +52,9 @@
     .Image {
         width: min(90%, 400px);
         margin: 0.5em 0;
+    }
+    .TextContainer {
+        width: min(90%, 400px);
     }
     .Text {
         font-size: 1.1rem;
