@@ -146,6 +146,10 @@ const techStack = [
         icon: `${devIcons}ubuntu/ubuntu-plain.svg`,
     },
     {
+        name: "NPM",
+        icon: `${devIcons}npm/npm-original-wordmark.svg`,
+    },
+    {
         name: "Yarn",
         icon: `${devIcons}yarn/yarn-original.svg`,
     },
