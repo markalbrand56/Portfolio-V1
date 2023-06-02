@@ -27,15 +27,7 @@ const projects = [
     },
     {
         title: "UVG Match",
-        tags: [
-            "Java",
-            "Tomcat",
-            "Neo4j",
-            "Netbeans",
-            "HTML",
-            "CSS",
-            "Javascript",
-        ],
+        tags: ["Java", "Tomcat", "Neo4j", "HTML", "CSS", "JavaScript"],
         url: "https://github.com/markalbrand56/AED-Proyecto-2",
         description:
             "UVG Match is a web application that allows students to find other students with similar " +
