@@ -163,7 +163,7 @@ function App() {
             </section>
 
             <div className={styles.Footer}>
-                Diseñado y construido por Mark Albrand
+                Diseñado y desarrollado por Mark Albrand
             </div>
         </div>
     )
