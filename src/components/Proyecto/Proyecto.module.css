@@ -52,10 +52,10 @@
 
 
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: black;
     border: 2px solid #000000;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     background-color: #FF6767;
     cursor: default;
 }
