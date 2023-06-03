@@ -19,11 +19,49 @@ const projects = [
         tags: ["Go", "MongoDB", "Gin Gonic"],
         url: "https://github.com/markalbrand56/Reading-Planner-API",
         description:
-            "REST API for Reading-Planner app using MongoDB and Go The project's " +
-            "objective is to track the user on the books that are currently being " +
-            "read and the ones that are on the queue. This API will follow the " +
-            "REST design pattern, due to its low complexity overall.",
-        icon: "",
+            "REST API para un planificador de lectura. Permite a los usuarios crear y administrar planes de lectura, " +
+            "añadiendo libros y registrando cuando se leen. Utiliza el framework Gin Gonic de Go para la " +
+            "construcción del API y MongoDB para almacenar los datos en línea.",
+        liveDemo: null,
+    },
+    {
+        title: "UniEmpleos",
+        tags: ["React", "PostgreSQL", "Gin Gonic"],
+        url: "https://github.com/markalbrand56/IS-Proyecto",
+        description:
+            "Aplicación web para la búsqueda de empleos, enfocada a universitarios con poca o ninguna " +
+            "experiencia laboral. Permite a los usuarios buscar y aplicar a empleos, así como a los empleadores " +
+            "publicar ofertas de trabajo. Utiliza React para el frontend, PostgreSQL para la base de datos y Gin " +
+            "Gonic para el backend.",
+        liveDemo: "https://sage-palmier-936be2.netlify.app/",
+    },
+    {
+        title: "Calculadora en React",
+        tags: ["React", "HTML", "CSS", "JavaScript"],
+        url: "https://github.com/markalbrand56/STW-Laboratorio-9",
+        description:
+            "Calculadora hecha en React. Permite realizar operaciones de suma, resta, multiplicación, división" +
+            "módulo y porcentaje. Utiliza React para el frontend y JavaScript para la lógica de la " +
+            "calculadora.",
+        liveDemo: "https://uvgenios.online/21004/STW-Laboratorio-9/",
+    },
+    {
+        title: "Réplica de F1 Academy",
+        tags: ["HTML", "CSS", "JavaScript", "React"],
+        url: "https://github.com/markalbrand56/STW-Proyecto-1",
+        description:
+            "Réplica del sitio web de F1 Academy. Se utilizó React para replicar toda la página principal" +
+            " y añadir el contador de días para la siguiente carrera como objeto dinámico.",
+        liveDemo: "https://uvgenios.online/21004/STW-Proyecto-1/",
+    },
+    {
+        title: "Juego de memoria en React",
+        tags: ["React", "HTML", "CSS", "JavaScript"],
+        url: "https://github.com/markalbrand56/STW-Laboratorio-6",
+        description:
+            "Juego de memoria hecho en React. Cuenta con 16 cartas que se barajan al inicio del juego. El objetivo" +
+            "es encontrar todas las parejas de cartas. La temática es de campeones mundiales de Fórmula 1.",
+        liveDemo: "https://uvgenios.online/21004/STW-Laboratorio-6/",
     },
     {
         title: "UVG Match",
@@ -33,6 +71,7 @@ const projects = [
             "UVG Match is a web application that allows students to find other students with similar " +
             "interests. The application will allow students to create a profile with their interests. " +
             "The application will then match students with other students that have similar interests.",
+        liveDemo: null,
     },
 ]
 
