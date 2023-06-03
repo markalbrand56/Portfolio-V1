@@ -4,7 +4,7 @@ import styles from "./Proyecto.module.css"
 import illustrations from "../../assets/illustrations"
 import ButtonLink from "../ButtonLink/ButtonLink"
 
-function Proyecto({ title, description, tags, url }) {
+function Proyecto({ title, description, tags, url, liveDemo }) {
     return (
         <div className={styles.Container}>
             <h1>{title}</h1>
@@ -17,12 +17,27 @@ function Proyecto({ title, description, tags, url }) {
                     ))}
                 </div>
                 <p>{description}</p>
-                <ButtonLink url={url} icon={illustrations.githubLogin}>
-                    Ver en
-                </ButtonLink>
+                <div className={styles.Buttons}>
+                    <ButtonLink url={url} icon={illustrations.githubLogin}>
+                        Ver en
+                    </ButtonLink>
+                    {liveDemo && (
+                        <ButtonLink
+                            url={liveDemo}
+                            icon={illustrations.externalLinks}
+                            theme="primary"
+                        >
+                            Live Demo
+                        </ButtonLink>
+                    )}
+                </div>
             </div>
         </div>
     )
+}
+
+Proyecto.defaultProps = {
+    liveDemo: null,
 }
 
 Proyecto.propTypes = {
@@ -30,6 +45,7 @@ Proyecto.propTypes = {
     description: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     url: PropTypes.string.isRequired,
+    liveDemo: PropTypes.string,
 }
 
 export default Proyecto

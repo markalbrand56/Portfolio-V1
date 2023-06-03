@@ -113,6 +113,7 @@ function App() {
                         description={project.description}
                         tags={project.tags}
                         url={project.url}
+                        liveDemo={project.liveDemo}
                     />
                 ))}
             </section>
