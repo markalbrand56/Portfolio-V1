@@ -266,21 +266,21 @@ h1 {
 }
 
 .waveTopLarge1 {
-    background-image: url("assets/wave-top-sec-large.svg");
+    background-image: url("assets/svg/wave-top-sec-large.svg");
 }
 
 .waveBottomLarge1 {
-    background-image: url("assets/wave-bottom-sec-large.svg");
+    background-image: url("assets/svg/wave-bottom-sec-large.svg");
 }
 
 .waveBottomSmall1 {
-    background-image: url("assets/wave-bottom-sec-small.svg");
+    background-image: url("assets/svg/wave-bottom-sec-small.svg");
 }
 
 .layeredTopLarge1 {
-    background-image: url("assets/layered-wave-top-sec-large.svg");
+    background-image: url("assets/svg/layered-wave-top-sec-large.svg");
 }
 
 .layeredBottomLarge1 {
-    background-image: url("assets/layered-wave-bottom-sec-large.svg");
+    background-image: url("assets/svg/layered-wave-bottom-sec-large.svg");
 }

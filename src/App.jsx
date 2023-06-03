@@ -160,7 +160,7 @@ function App() {
 
             <section id="about" className={styles.About}>
                 <h1 className={styles.Titulo1}>Acerca de mí</h1>
-                <About about={about} picture={illustrations.me} />
+                <About about={about} pictures={illustrations.about} />
             </section>
 
             <div className={styles.Footer}>

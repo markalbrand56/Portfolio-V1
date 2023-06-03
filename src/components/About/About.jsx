@@ -1,9 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Splide, SplideSlide } from "@splidejs/react-splide"
 import styles from "./About.module.css"
+import '@splidejs/react-splide/css'
 
-function About({ about, picture }) {
-    // TODO EN LA FOTO HACER UN COSO COMO EL LAB DE LA MEMORIA, AL PRESIONAR LA FOTO QUE MUESTRE OTRA COSA ATRAS
+function About({ about, pictures }) {
     return (
         <div className={styles.Container}>
             <div className={styles.TextContainer}>
@@ -14,14 +15,26 @@ function About({ about, picture }) {
                     </p>
                 ))}
             </div>
-            <img className={styles.Image} src={picture} alt="Me" />
+            <div className={styles.Slider}>
+                <Splide>
+                    {pictures.map((picture, index) => (
+                        <SplideSlide key={picture.toString()}>
+                            <img
+                                className={styles.Image}
+                                src={picture.toString()}
+                                alt={`About ${index}`}
+                            />
+                        </SplideSlide>
+                    ))}
+                </Splide>
+            </div>
         </div>
     )
 }
 
 About.propTypes = {
     about: PropTypes.arrayOf(PropTypes.string).isRequired,
-    picture: PropTypes.string.isRequired,
+    pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 export default About

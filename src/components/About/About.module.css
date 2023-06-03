@@ -19,7 +19,8 @@
 }
 
 .Image {
-    width: min(40%, 350px);
+    /*width: min(40%, 350px);*/
+    max-width: min(80%, 350px);
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -49,7 +50,11 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 600px) {
+.Slider {
+    width: min(45%, 450px);
+}
+
+@media screen and (max-width: 700px) {
     .Container {
         flex-direction: column;
         padding: 1em;
@@ -70,5 +75,12 @@
         margin: 0.5em 0;
         font-size: 1.8rem;
         color: var(--primary-3);
+    }
+    .Slider {
+        margin: 1em 0;
+        width: min(80%, 600px);
+    }
+    .Image {
+        width: min(90%, 400px);
     }
 }
