@@ -34,6 +34,12 @@
     margin: 0;
 }
 
+.TextContainer h1 {
+    align-self: start;
+    margin: 1em 0;
+    color: var(--primary-3);
+}
+
 .Text {
     width: min(100%, 500px);
     padding: 1em;
@@ -58,5 +64,11 @@
     }
     .Text {
         font-size: 1.1rem;
+    }
+    .TextContainer h1 {
+        align-self: center;
+        margin: 0.5em 0;
+        font-size: 1.8rem;
+        color: var(--primary-3);
     }
 }

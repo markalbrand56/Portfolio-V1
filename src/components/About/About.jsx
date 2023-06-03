@@ -7,8 +7,11 @@ function About({ about, picture }) {
     return (
         <div className={styles.Container}>
             <div className={styles.TextContainer}>
+                <h1>Mark Albrand Mendoza</h1>
                 {about.map((paragraph) => (
-                    <p key={paragraph} className={styles.Text}>{paragraph}</p>
+                    <p key={paragraph.toString()} className={styles.Text}>
+                        {paragraph}
+                    </p>
                 ))}
             </div>
             <img className={styles.Image} src={picture} alt="Me" />
