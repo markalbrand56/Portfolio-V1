@@ -6,7 +6,7 @@
     width: min(75%, 1000px);
     padding: 2em;
 
-    margin: 2em 0;
+    margin: 1.5em 0;
 
     outline: 2px solid black;
     border-radius: 5px;
@@ -33,6 +33,7 @@
 .Content p {
     width: 90%;
     text-align: justify;
+    font-size: 1.1rem;
 }
 
 .Tags {

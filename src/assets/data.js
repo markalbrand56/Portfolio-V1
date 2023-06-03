@@ -64,13 +64,13 @@ const projects = [
         liveDemo: "https://uvgenios.online/21004/STW-Laboratorio-6/",
     },
     {
-        title: "UVG Match",
-        tags: ["Java", "Tomcat", "Neo4j", "HTML", "CSS", "JavaScript"],
-        url: "https://github.com/markalbrand56/AED-Proyecto-2",
+        title: "REST API para sistema de administración hospitalario",
+        tags: ["Python", "FastAPI", "PostgreSQL"],
+        url: "https://github.com/markalbrand56/BD-Proyecto-2-API",
         description:
-            "UVG Match is a web application that allows students to find other students with similar " +
-            "interests. The application will allow students to create a profile with their interests. " +
-            "The application will then match students with other students that have similar interests.",
+            "REST API para un sistema de administración de un hospital. Permite administrar un hospital, " +
+            "añadiendo pacientes, doctores, consultas y medicamentos. Utiliza FastAPI para la construcción del API y " +
+            "PostgreSQL para almacenar los datos en línea.",
         liveDemo: null,
     },
 ]
