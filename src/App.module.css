@@ -81,21 +81,26 @@
     height: 100%;
     margin: 2em 0;
     padding: 0;
-
-    /*background-color: var(--secondary);*/
 }
 
 .Name {
     font-size: 8em;
     font-weight: 500;
 
-    width: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
 
     color: var(--primary);
+    transition: all 0.5s ease;
 }
+
+.Name:hover{
+    color: var(--accent-3);
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
 
 .Hero h2 {
     margin: 1em 0;
@@ -114,13 +119,7 @@
 
     text-align: center;
     color: black;
-    font-size: 1.2rem;
-}
-
-@media screen and (max-width: 500px) {
-    .Name {
-        font-size: 5em;
-    }
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -155,6 +154,9 @@ h1 {
     }
     .Titulo2 {
         font-size: 2em;
+    }
+    .Name {
+        font-size: 5em;
     }
 }
 
