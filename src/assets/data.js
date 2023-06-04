@@ -37,7 +37,7 @@ const projects = [
     },
     {
         title: "Calculadora en React",
-        tags: ["React", "HTML", "CSS", "JavaScript"],
+        tags: ["React", "JavaScript", "CSS", "HTML"],
         url: "https://github.com/markalbrand56/STW-Laboratorio-9",
         description:
             "Calculadora hecha en React. Permite realizar operaciones de suma, resta, multiplicación, división" +
@@ -47,7 +47,7 @@ const projects = [
     },
     {
         title: "Réplica de F1 Academy",
-        tags: ["HTML", "CSS", "JavaScript", "React"],
+        tags: ["React", "JavaScript", "CSS", "HTML"],
         url: "https://github.com/markalbrand56/STW-Proyecto-1",
         description:
             "Réplica del sitio web de F1 Academy. Se utilizó React para replicar toda la página principal" +
@@ -56,7 +56,7 @@ const projects = [
     },
     {
         title: "Juego de memoria en React",
-        tags: ["React", "HTML", "CSS", "JavaScript"],
+        tags: ["React", "JavaScript", "CSS", "HTML"],
         url: "https://github.com/markalbrand56/STW-Laboratorio-6",
         description:
             "Juego de memoria hecho en React. Cuenta con 16 cartas que se barajan al inicio del juego. El objetivo" +
