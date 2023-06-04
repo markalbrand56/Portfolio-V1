@@ -1,9 +1,13 @@
 import React from "react"
 import { Link } from "react-scroll"
 import styles from "./App.module.css"
+import About from "./components/About/About"
+import ButtonLink from "./components/ButtonLink/ButtonLink"
+import Education from "./components/Education/Education"
+import Experience from "./components/Experience/Experience"
 import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
-import Education from "./components/Education/Education"
+import illustrations from "./assets/illustrations"
 import {
     education,
     projects,
@@ -11,10 +15,6 @@ import {
     experience,
     about,
 } from "./assets/data"
-import Experience from "./components/Experience/Experience"
-import ButtonLink from "./components/ButtonLink/ButtonLink"
-import illustrations from "./assets/illustrations"
-import About from "./components/About/About"
 
 function App() {
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
