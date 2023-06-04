@@ -23,7 +23,7 @@ function About({ about, pictures }) {
                         autoplay: true,
                         interval: 3500,
                         arrows: false,
-                        pauseOnFocus: true,
+                        pauseOnHover: true,
                     }}
                 >
                     {pictures.map((picture, index) => (
