@@ -98,6 +98,12 @@ function App() {
                     >
                         LinkedIn
                     </ButtonLink>
+                    <ButtonLink
+                        icon={illustrations.mail}
+                        url="mailto:mark.albrand@protonmail.com"
+                    >
+                        Contacto
+                    </ButtonLink>
                 </div>
             </section>
 
