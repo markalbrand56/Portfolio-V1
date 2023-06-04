@@ -64,11 +64,11 @@
 }
 
 .linkedin{
-    background-color: #0077b5;
-    color: white;
+    background-color: #1c8ac7;
+    color: black;
 }
 
 .linkedin:hover{
     background-color: var(--primary-2);
-    color: white;
+    color: black;
 }
