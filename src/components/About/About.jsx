@@ -16,7 +16,7 @@ function About({ about, pictures }) {
                 ))}
             </div>
             <div className={styles.Slider}>
-                <Splide>
+                <Splide options={{ rewind: true }}>
                     {pictures.map((picture, index) => (
                         <SplideSlide key={picture.toString()}>
                             <img
