@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 import styles from "./About.module.css"
-import '@splidejs/react-splide/css'
+import "@splidejs/react-splide/css"
 
 function About({ about, pictures }) {
     return (
