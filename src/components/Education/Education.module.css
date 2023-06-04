@@ -20,6 +20,7 @@
     .Container {
         aspect-ratio: auto;
         padding: 1.5em;
+        margin: 2em 1em;
     }
 }
 
