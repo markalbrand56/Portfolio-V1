@@ -4,7 +4,12 @@ import styles from "./ButtonLink.module.css"
 
 function ButtonLink({ children, url, icon, theme }) {
     return (
-        <a href={url} className={`${styles.ButtonLink} ${styles[theme]}`} target="_blank">
+        <a
+            href={url}
+            className={`${styles.ButtonLink} ${styles[theme]}`}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             {children}
             <img src={icon} alt="i" />
         </a>
