@@ -169,8 +169,9 @@ function App() {
                 <About about={about} pictures={illustrations.about} />
             </section>
 
+            <div className={waveBottomSmall} />
             <div className={styles.Footer}>
-                Diseñado y desarrollado por Mark Albrand
+                <span> Diseñado y desarrollado por Mark Albrand </span>
             </div>
         </div>
     )
