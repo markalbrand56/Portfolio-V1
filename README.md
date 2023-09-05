@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff88b110-a6e0-4499-83c6-a9cdbae7cd26/deploy-status)](https://app.netlify.com/sites/albrand/deploys)
 # Portfolio-V1
 Portafolio personal
 
