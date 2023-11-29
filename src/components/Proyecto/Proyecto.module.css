@@ -16,7 +16,7 @@
 }
 
 .Container h1 {
-    margin: 0;
+    margin: 0 0 0 0.5em;
     padding: 0;
     color: var(--primary-5);
 }
@@ -31,7 +31,7 @@
 }
 
 .Content p {
-    width: 90%;
+    width: 95%;
     text-align: justify;
     font-size: 1.1rem;
 }
@@ -68,7 +68,7 @@
     justify-content: center;
 
     width: 100%;
-    margin: 1em 0;
+    margin: 1em 0 0 0;
 }
 
 .urlButton {
