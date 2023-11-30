@@ -198,6 +198,14 @@ const certificates = [
 
 const experience = [
     {
+        title: "Desarrollador BackEnd en Garoo, Guatemala",
+        description: "Encargado de liderar la concepción, desarrollo y despliegue de bots avanzados utilizando " +
+            "tecnologías de inteligencia artificial, con un enfoque particular en la plataforma OpenAI. Además de " +
+            "la colaboración en el desarrollo backend para aplicaciones web, aportando experiencia en la creación " +
+            "de APIs robustas.",
+        year: "noviembre 2023 - presente",
+    },
+    {
         title: "Responsable de Sistemas en Anita's Gift Shop, Merced, CA",
         description: "Configuró y desplegó la solución empresarial tipo SAP Epos Now, luego de crear las bases de datos para los productos del local. Solucionó activamente los problemas que surgieron, ayudando a la empresa a comenzar a operar lo antes posible.",
         year: "octubre 2020 - diciembre 2020",
