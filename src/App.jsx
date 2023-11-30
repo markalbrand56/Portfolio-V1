@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react"
+import React, {useEffect, useState} from "react"
 
-import { Link } from "react-scroll"
+import {Link} from "react-scroll"
 import PocketBase from "pocketbase"
 
 import styles from "./App.module.css"
@@ -13,24 +13,21 @@ import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 
 import illustrations from "./assets/illustrations"
-import {
-    about,
-    certificates,
-    education,
-    experience,
-    projects,
-} from "./assets/data"
+import {about, certificates, education, experience,} from "./assets/data"
 
 function App() {
     const backendUrl = import.meta.env.VITE_BACKEND_URL
     const pb = new PocketBase(backendUrl)
+
     const [projectList, setProjectList] = useState([])
+    const [experienceList, setExperienceList] = useState([])
 
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
     const waveBottomLarge = `${styles.SpacerLarge} ${styles.waveBottomLarge1}`
     const waveBottomSmall = `${styles.SpacerSmall} ${styles.waveBottomSmall1}`
 
     useEffect(() => {
+        // Proyectos
         const fetchProjects = async () => {
             const records = await pb.collection("Proyectos").getFullList({
                 sort: "-created",
@@ -45,6 +42,18 @@ function App() {
         fetchProjects().then((records) => {
             setProjectList(records)
             console.log("Project List", projectList) // TODO: Remove
+        })
+
+        // Experiencia
+        const fetchExperience = async () => {
+            const records = await pb.collection("Experiencia").getFullList({
+                sort: "-Order",
+            })
+            return records
+        }
+        fetchExperience().then((records) => {
+            setExperienceList(records)
+            console.log("Experience", records) // TODO: Remove
         })
     }, [])
 
@@ -155,12 +164,12 @@ function App() {
 
             <section id="experience" className={styles.Experience}>
                 <h1 className={styles.Titulo2}>Experiencia laboral</h1>
-                {experience.map((exp) => (
+                {experienceList.map((exp) => (
                     <Experience
-                        key={exp.title}
-                        title={exp.title}
-                        description={exp.description}
-                        year={exp.year}
+                        key={exp.Position}
+                        title={exp.Position}
+                        description={exp.Description}
+                        year={exp.Date}
                     />
                 ))}
             </section>
