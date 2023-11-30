@@ -34,11 +34,11 @@ function App() {
             const records = await pb.collection("Proyectos").getFullList({
                 sort: "-created",
             })
-
             // Convert Tags to array
             return records.map((record) => ({
                 ...record,
                 Tags: record.Tags.split(",").map((tag) => tag.trim()),
+                LiveDemo: record.LiveDemo === "" ? null : record.LiveDemo,
             }))
         }
         fetchProjects().then((records) => {
@@ -138,14 +138,14 @@ function App() {
             <div className={waveTopLarge} />
             <section id="projects" className={styles.Projects}>
                 <h1 className={styles.Titulo1}>Proyectos</h1>
-                {projects.map((project) => (
+                {projectList.map((project) => (
                     <Proyecto
-                        key={project.title}
-                        title={project.title}
-                        description={project.description}
-                        tags={project.tags}
-                        url={project.url}
-                        liveDemo={project.liveDemo}
+                        key={project.Title}
+                        title={project.Title}
+                        description={project.Description}
+                        tags={project.Tags}
+                        url={project.Github}
+                        liveDemo={project.LiveDemo}
                     />
                 ))}
             </section>
