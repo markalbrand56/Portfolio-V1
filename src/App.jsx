@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react"
 
-import {Link} from "react-scroll"
+import { Link } from "react-scroll"
 import PocketBase from "pocketbase"
 
 import styles from "./App.module.css"
@@ -43,7 +43,6 @@ function App() {
         }
         fetchProjects().then((records) => {
             setProjectList(records)
-            console.log("Project List", projectList) // TODO: Remove
         })
 
         // Experiencia
@@ -55,7 +54,6 @@ function App() {
         }
         fetchExperience().then((records) => {
             setExperienceList(records)
-            console.log("Experience", records) // TODO: Remove
         })
 
         // Educación
@@ -67,7 +65,6 @@ function App() {
         }
         fetchEducation().then((records) => {
             setEducationList(records)
-            console.log("Education", records) // TODO: Remove
         })
 
         // Certificados
@@ -79,7 +76,6 @@ function App() {
         }
         fetchCertificates().then((records) => {
             setCertificateList(records)
-            console.log("Certificates", records) // TODO: Remove
         })
     }, [])
 
