@@ -15,65 +15,65 @@ const education = [
 
 const projects = [
     {
-        title: "Reading Planner API",
-        tags: ["Go", "MongoDB", "Gin Gonic"],
-        url: "https://github.com/markalbrand56/Reading-Planner-API",
-        description:
+        Title: "Reading Planner API",
+        Tags: ["Go", "MongoDB", "Gin Gonic"],
+        Github: "https://github.com/markalbrand56/Reading-Planner-API",
+        Description:
             "REST API para un planificador de lectura. Permite a los usuarios crear y administrar planes de lectura, " +
             "añadiendo libros y registrando cuando se leen. Utiliza el framework Gin Gonic de Go para la " +
             "construcción del API y MongoDB para almacenar los datos en línea.",
-        liveDemo: null,
+        LiveDemo: null,
     },
     {
-        title: "UniEmpleos",
-        tags: ["React", "PostgreSQL", "Gin Gonic"],
-        url: "https://github.com/markalbrand56/IS-Proyecto",
-        description:
+        Title: "UniEmpleos",
+        Tags: ["React", "PostgreSQL", "Gin Gonic"],
+        Github: "https://github.com/markalbrand56/IS-Proyecto",
+        Description:
             "Aplicación web para la búsqueda de empleos, enfocada a universitarios con poca o ninguna " +
             "experiencia laboral. Permite a los usuarios buscar y aplicar a empleos, así como a los empleadores " +
             "publicar ofertas de trabajo. Utiliza React para el frontend, PostgreSQL para la base de datos y Gin " +
             "Gonic para el backend. Además, el proyecto ganó el segundo lugar en el evento de la Universidad del " +
             "Valle de Guatemala: Pitchapalooza 2023.",
-        liveDemo: "https://uniempleos.netlify.app/",
+        LiveDemo: "https://uniempleos.netlify.app/",
     },
     {
-        title: "REST API para simulación de máquina de Turing",
-        tags: ["Python", "FastAPI"],
-        url: "https://github.com/markalbrand56/TC-Proyecto-3-API",
-        description:
+        Title: "REST API para simulación de máquina de Turing",
+        Tags: ["Python", "FastAPI"],
+        Github: "https://github.com/markalbrand56/TC-Proyecto-3-API",
+        Description:
             "Proyecto de Teoría de la Computación. Consiste en una REST API que permite simular una máquina de " +
             "Turing. Utiliza FastAPI para la construcción de una API para simular la máquina de Turing y regresar " +
             "los resultados de la simulación hacia el frontend. La simulación acepta máquinas de Turing deterministas" +
             " de una sola cinta.",
-        liveDemo: "https://tc-proyecto-3-markalbrand56.koyeb.app/docs",
+        LiveDemo: "https://tc-proyecto-3-markalbrand56.koyeb.app/docs",
     },
     {
-        title: "REST API para sistema de administración hospitalario",
-        tags: ["Python", "FastAPI", "PostgreSQL"],
-        url: "https://github.com/markalbrand56/BD-Proyecto-2-API",
-        description:
+        Title: "REST API para sistema de administración hospitalario",
+        Tags: ["Python", "FastAPI", "PostgreSQL"],
+        Github: "https://github.com/markalbrand56/BD-Proyecto-2-API",
+        Description:
             "REST API para un sistema de administración de un hospital. Permite administrar un hospital, " +
             "añadiendo pacientes, doctores, consultas y medicamentos. Utiliza FastAPI para la construcción del API y " +
             "PostgreSQL para almacenar los datos en línea.",
-        liveDemo: null,
+        LiveDemo: null,
     },
     {
-        title: "Calculadora en React",
-        tags: ["React", "JavaScript", "CSS", "HTML"],
-        url: "https://github.com/markalbrand56/STW-Laboratorio-9",
-        description:
+        Title: "Calculadora en React",
+        Tags: ["React", "JavaScript", "CSS", "HTML"],
+        Github: "https://github.com/markalbrand56/STW-Laboratorio-9",
+        Description:
             "Calculadora hecha en React. Permite realizar operaciones de suma, resta, multiplicación, división, " +
             "módulo y porcentaje. Utiliza React para el frontend y JavaScript para la lógica de la calculadora.",
-        liveDemo: "https://albrand-projects-react-calculator.netlify.app/",
+        LiveDemo: "https://albrand-projects-react-calculator.netlify.app/",
     },
     {
-        title: "Réplica de F1 Academy",
-        tags: ["React", "JavaScript", "CSS", "HTML"],
-        url: "https://github.com/markalbrand56/STW-Proyecto-1",
-        description:
+        Title: "Réplica de F1 Academy",
+        Tags: ["React", "JavaScript", "CSS", "HTML"],
+        Github: "https://github.com/markalbrand56/STW-Proyecto-1",
+        Description:
             "Réplica de la versión de escritorio del sitio web de F1 Academy. Se utilizó React para replicar toda la" +
             " página principal y añadir el contador de días para la siguiente carrera como objeto dinámico.",
-        liveDemo: "https://albrand-projects-f1-replica.netlify.app/",
+        LiveDemo: "https://albrand-projects-f1-replica.netlify.app/",
     },
 ]
 
@@ -190,25 +190,25 @@ const techStack = [
 
 const certificates = [
     {
-        title: "PCAP: Programming Essentials in Python",
-        description: "CISCO Networking Academy - Universidad Galileo",
-        year: "2019",
+        Title: "PCAP: Programming Essentials in Python",
+        Institute: "CISCO Networking Academy - Universidad Galileo",
+        Date: "2019",
     },
 ]
 
 const experience = [
     {
-        title: "Desarrollador BackEnd en Garoo, Guatemala",
-        description: "Encargado de liderar la concepción, desarrollo y despliegue de bots avanzados utilizando " +
+        Position: "Desarrollador BackEnd en Garoo, Guatemala",
+        Description: "Encargado de liderar la concepción, desarrollo y despliegue de bots avanzados utilizando " +
             "tecnologías de inteligencia artificial, con un enfoque particular en la plataforma OpenAI. Además de " +
             "la colaboración en el desarrollo backend para aplicaciones web, aportando experiencia en la creación " +
             "de APIs robustas.",
-        year: "noviembre 2023 - presente",
+        Date: "noviembre 2023 - presente",
     },
     {
-        title: "Responsable de Sistemas en Anita's Gift Shop, Merced, CA",
-        description: "Configuró y desplegó la solución empresarial tipo SAP Epos Now, luego de crear las bases de datos para los productos del local. Solucionó activamente los problemas que surgieron, ayudando a la empresa a comenzar a operar lo antes posible.",
-        year: "octubre 2020 - diciembre 2020",
+        Position: "Responsable de Sistemas en Anita's Gift Shop, Merced, CA",
+        Description: "Configuró y desplegó la solución empresarial tipo SAP Epos Now, luego de crear las bases de datos para los productos del local. Solucionó activamente los problemas que surgieron, ayudando a la empresa a comenzar a operar lo antes posible.",
+        Date: "octubre 2020 - diciembre 2020",
     },
 ]
 

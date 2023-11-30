@@ -13,7 +13,7 @@ import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 
 import illustrations from "./assets/illustrations"
-import {about, certificates, education, experience,} from "./assets/data"
+import {about, certificates, education, experience, projects} from "./assets/data"
 
 function App() {
     const backendUrl = import.meta.env.VITE_BACKEND_URL
@@ -21,6 +21,8 @@ function App() {
 
     const [projectList, setProjectList] = useState([])
     const [experienceList, setExperienceList] = useState([])
+    const [educationList, setEducationList] = useState([])
+    const [certificateList, setCertificateList] = useState([])
 
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
     const waveBottomLarge = `${styles.SpacerLarge} ${styles.waveBottomLarge1}`
@@ -54,6 +56,30 @@ function App() {
         fetchExperience().then((records) => {
             setExperienceList(records)
             console.log("Experience", records) // TODO: Remove
+        })
+
+        // Educación
+        const fetchEducation = async () => {
+            const records = await pb.collection("Educacion").getFullList({
+                sort: "-created",
+            })
+            return records
+        }
+        fetchEducation().then((records) => {
+            setEducationList(records)
+            console.log("Education", records) // TODO: Remove
+        })
+
+        // Certificados
+        const fetchCertificates = async () => {
+            const records = await pb.collection("Certificados").getFullList({
+                sort: "-created",
+            })
+            return records
+        }
+        fetchCertificates().then((records) => {
+            setCertificateList(records)
+            console.log("Certificates", records) // TODO: Remove
         })
     }, [])
 
@@ -176,24 +202,24 @@ function App() {
 
             <section id="education" className={styles.Education}>
                 <h1 className={styles.Titulo2}>Educación</h1>
-                {education.map((edu) => (
+                {educationList.map((edu) => (
                     <Education
-                        key={edu.title}
-                        title={edu.title}
-                        description={edu.description}
-                        year={edu.year}
+                        key={edu.Institute}
+                        title={edu.Institute}
+                        description={edu.Description}
+                        year={edu.Time}
                     />
                 ))}
             </section>
 
             <section id="certificates" className={styles.Certificates}>
                 <h1 className={styles.Titulo2}>Certificados</h1>
-                {certificates.map((cert) => (
+                {certificateList.map((cert) => (
                     <Education
-                        key={cert.title}
-                        title={cert.title}
-                        description={cert.description}
-                        year={cert.year}
+                        key={cert.Title}
+                        title={cert.Title}
+                        description={cert.Institute}
+                        year={cert.Date}
                     />
                 ))}
             </section>
