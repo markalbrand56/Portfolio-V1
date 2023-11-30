@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react"
-import { Link } from "react-scroll"
+import {Link} from "react-scroll"
 import styles from "./App.module.css"
 import About from "./components/About/About"
 import ButtonLink from "./components/ButtonLink/ButtonLink"
@@ -8,17 +8,11 @@ import Experience from "./components/Experience/Experience"
 import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 import illustrations from "./assets/illustrations"
-import {
-    education,
-    projects,
-    certificates,
-    experience,
-    about,
-} from "./assets/data"
+import {about, certificates, education, experience, projects,} from "./assets/data"
 import PocketBase from "pocketbase"
 
 function App() {
-    const pb = new PocketBase('http://127.0.0.1:8090');
+    const pb = new PocketBase("http://127.0.0.1:8090")
     const [projectList, setProjectList] = useState([]);
 
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
@@ -27,25 +21,21 @@ function App() {
 
     useEffect(() => {
         const fetchProjects = async () => {
-            const records = await pb.collection('Proyectos').getFullList({
-                sort: '-created',
-            });
-
-            // for each record, edit the 'Tag' field to be an array of strings, dividind the string by ','
-            records.forEach((record) => {
-                console.log(record.Tags)
-                record.Tags = record.Tags.split(',').map((tag) => tag.trim())
-                console.log(record.Tags)
+            const records = await pb.collection("Proyectos").getFullList({
+                sort: "-created",
             })
 
-            return records
+            // Convert Tags to array
+            return records.map((record) => ({
+                ...record,
+                Tags: record.Tags.split(",").map((tag) => tag.trim()),
+            }))
         }
         fetchProjects().then((records) => {
             setProjectList(records)
         })
-    }, []);
-
-    console.log("Project List", projectList)
+        console.log("Project List", projectList)
+    }, [])
 
     return (
         <div className={styles.App}>
