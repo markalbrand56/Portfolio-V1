@@ -40,6 +40,14 @@ function App() {
                     </Link>
                     <Link
                         className={styles.NavLink}
+                        to="experience"
+                        smooth
+                        duration={500}
+                    >
+                        Experiencia
+                    </Link>
+                    <Link
+                        className={styles.NavLink}
                         to="education"
                         smooth
                         duration={500}
@@ -53,14 +61,6 @@ function App() {
                         duration={500}
                     >
                         Certificados
-                    </Link>
-                    <Link
-                        className={styles.NavLink}
-                        to="experience"
-                        smooth
-                        duration={500}
-                    >
-                        Experiencia
                     </Link>
                     <Link
                         className={styles.NavLink}
@@ -126,6 +126,18 @@ function App() {
 
             <div className={waveBottomLarge} />
 
+            <section id="experience" className={styles.Experience}>
+                <h1 className={styles.Titulo2}>Experiencia laboral</h1>
+                {experience.map((exp) => (
+                    <Experience
+                        key={exp.title}
+                        title={exp.title}
+                        description={exp.description}
+                        year={exp.year}
+                    />
+                ))}
+            </section>
+
             <section id="education" className={styles.Education}>
                 <h1 className={styles.Titulo2}>Educación</h1>
                 {education.map((edu) => (
@@ -146,18 +158,6 @@ function App() {
                         title={cert.title}
                         description={cert.description}
                         year={cert.year}
-                    />
-                ))}
-            </section>
-
-            <section id="experience" className={styles.Experience}>
-                <h1 className={styles.Titulo2}>Experiencia laboral</h1>
-                {experience.map((exp) => (
-                    <Experience
-                        key={exp.title}
-                        title={exp.title}
-                        description={exp.description}
-                        year={exp.year}
                     />
                 ))}
             </section>
