@@ -37,7 +37,7 @@ const projects = [
         liveDemo: "https://uniempleos.netlify.app/",
     },
     {
-        title: "REST API para simulación de máquina de turing",
+        title: "REST API para simulación de máquina de Turing",
         tags: ["Python", "FastAPI"],
         url: "https://github.com/markalbrand56/TC-Proyecto-3-API",
         description:
