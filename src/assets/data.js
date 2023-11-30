@@ -33,35 +33,18 @@ const projects = [
             "experiencia laboral. Permite a los usuarios buscar y aplicar a empleos, así como a los empleadores " +
             "publicar ofertas de trabajo. Utiliza React para el frontend, PostgreSQL para la base de datos y Gin " +
             "Gonic para el backend.",
-        liveDemo: "https://sage-palmier-936be2.netlify.app/",
+        liveDemo: "https://uniempleos.netlify.app/",
     },
     {
-        title: "Calculadora en React",
-        tags: ["React", "JavaScript", "CSS", "HTML"],
-        url: "https://github.com/markalbrand56/STW-Laboratorio-9",
+        title: "REST API para simulación de máquina de turing",
+        tags: ["Python", "FastAPI"],
+        url: "https://github.com/markalbrand56/TC-Proyecto-3-API",
         description:
-            "Calculadora hecha en React. Permite realizar operaciones de suma, resta, multiplicación, división" +
-            "módulo y porcentaje. Utiliza React para el frontend y JavaScript para la lógica de la " +
-            "calculadora.",
-        liveDemo: "https://uvgenios.online/21004/STW-Laboratorio-9/",
-    },
-    {
-        title: "Réplica de F1 Academy",
-        tags: ["React", "JavaScript", "CSS", "HTML"],
-        url: "https://github.com/markalbrand56/STW-Proyecto-1",
-        description:
-            "Réplica del sitio web de F1 Academy. Se utilizó React para replicar toda la página principal" +
-            " y añadir el contador de días para la siguiente carrera como objeto dinámico.",
-        liveDemo: "https://uvgenios.online/21004/STW-Proyecto-1/",
-    },
-    {
-        title: "Juego de memoria en React",
-        tags: ["React", "JavaScript", "CSS", "HTML"],
-        url: "https://github.com/markalbrand56/STW-Laboratorio-6",
-        description:
-            "Juego de memoria hecho en React. Cuenta con 16 cartas que se barajan al inicio del juego. El objetivo" +
-            "es encontrar todas las parejas de cartas. La temática es de campeones mundiales de Fórmula 1.",
-        liveDemo: "https://uvgenios.online/21004/STW-Laboratorio-6/",
+            "Proyecto de Teoría de la Computación. Consiste en una REST API que permite simular una máquina de " +
+            "Turing. Utiliza FastAPI para la construcción de una API para simular la máquina de Turing y regresar " +
+            "los resultados de la simulación hacia el frontend. La simulación acepta máquinas de Turing deterministas" +
+            " de una sola cinta.",
+        liveDemo: "https://tc-proyecto-3-markalbrand56.koyeb.app/docs",
     },
     {
         title: "REST API para sistema de administración hospitalario",
@@ -72,6 +55,24 @@ const projects = [
             "añadiendo pacientes, doctores, consultas y medicamentos. Utiliza FastAPI para la construcción del API y " +
             "PostgreSQL para almacenar los datos en línea.",
         liveDemo: null,
+    },
+    {
+        title: "Calculadora en React",
+        tags: ["React", "JavaScript", "CSS", "HTML"],
+        url: "https://github.com/markalbrand56/STW-Laboratorio-9",
+        description:
+            "Calculadora hecha en React. Permite realizar operaciones de suma, resta, multiplicación, división, " +
+            "módulo y porcentaje. Utiliza React para el frontend y JavaScript para la lógica de la calculadora.",
+        liveDemo: "https://albrand-projects-react-calculator.netlify.app/",
+    },
+    {
+        title: "Réplica de F1 Academy",
+        tags: ["React", "JavaScript", "CSS", "HTML"],
+        url: "https://github.com/markalbrand56/STW-Proyecto-1",
+        description:
+            "Réplica de la versión de escritorio del sitio web de F1 Academy. Se utilizó React para replicar toda la" +
+            " página principal y añadir el contador de días para la siguiente carrera como objeto dinámico.",
+        liveDemo: "https://albrand-projects-f1-replica.netlify.app/",
     },
 ]
 
