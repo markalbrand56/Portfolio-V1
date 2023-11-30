@@ -32,7 +32,8 @@ const projects = [
             "Aplicación web para la búsqueda de empleos, enfocada a universitarios con poca o ninguna " +
             "experiencia laboral. Permite a los usuarios buscar y aplicar a empleos, así como a los empleadores " +
             "publicar ofertas de trabajo. Utiliza React para el frontend, PostgreSQL para la base de datos y Gin " +
-            "Gonic para el backend.",
+            "Gonic para el backend. Además, el proyecto ganó el segundo lugar en el evento de la Universidad del " +
+            "Valle de Guatemala: Pitchapalooza 2023.",
         liveDemo: "https://uniempleos.netlify.app/",
     },
     {
