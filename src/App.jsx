@@ -22,7 +22,8 @@ import {
 } from "./assets/data"
 
 function App() {
-    const pb = new PocketBase("http://127.0.0.1:8090")
+    const backendUrl = import.meta.env.VITE_BACKEND_URL
+    const pb = new PocketBase(backendUrl)
     const [projectList, setProjectList] = useState([])
 
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
@@ -43,8 +44,8 @@ function App() {
         }
         fetchProjects().then((records) => {
             setProjectList(records)
+            console.log("Project List", projectList) // TODO: Remove
         })
-        console.log("Project List", projectList)
     }, [])
 
     return (
