@@ -13,7 +13,8 @@ import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
 
 import illustrations from "./assets/illustrations"
-import {about, certificates, education, experience, projects} from "./assets/data"
+import { about } from "./assets/data"
+// import { certificates, education, experience, projects } from "./assets/data"
 
 function App() {
     const backendUrl = import.meta.env.VITE_BACKEND_URL
@@ -32,7 +33,7 @@ function App() {
         // Proyectos
         const fetchProjects = async () => {
             const records = await pb.collection("Proyectos").getFullList({
-                sort: "-created",
+                sort: "created",
             })
             // Convert Tags to array
             return records.map((record) => ({
