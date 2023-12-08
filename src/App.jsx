@@ -1,25 +1,84 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+
 import { Link } from "react-scroll"
+import PocketBase from "pocketbase"
+
 import styles from "./App.module.css"
+
 import About from "./components/About/About"
 import ButtonLink from "./components/ButtonLink/ButtonLink"
 import Education from "./components/Education/Education"
 import Experience from "./components/Experience/Experience"
 import Proyecto from "./components/Proyecto/Proyecto"
 import TechStack from "./components/TechStack/TechStack"
+
 import illustrations from "./assets/illustrations"
-import {
-    education,
-    projects,
-    certificates,
-    experience,
-    about,
-} from "./assets/data"
+import { about } from "./assets/data"
+// import { certificates, education, experience, projects } from "./assets/data"
 
 function App() {
+    const backendUrl = import.meta.env.VITE_BACKEND_URL
+    const pb = new PocketBase(backendUrl)
+
+    const [projectList, setProjectList] = useState([])
+    const [experienceList, setExperienceList] = useState([])
+    const [educationList, setEducationList] = useState([])
+    const [certificateList, setCertificateList] = useState([])
+
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
     const waveBottomLarge = `${styles.SpacerLarge} ${styles.waveBottomLarge1}`
     const waveBottomSmall = `${styles.SpacerSmall} ${styles.waveBottomSmall1}`
+
+    useEffect(() => {
+        // Proyectos
+        const fetchProjects = async () => {
+            const records = await pb.collection("Proyectos").getFullList({
+                sort: "created",
+            })
+            // Convert Tags to array
+            return records.map((record) => ({
+                ...record,
+                Tags: record.Tags.split(",").map((tag) => tag.trim()),
+                LiveDemo: record.LiveDemo === "" ? null : record.LiveDemo,
+            }))
+        }
+        fetchProjects().then((records) => {
+            setProjectList(records)
+        })
+
+        // Experiencia
+        const fetchExperience = async () => {
+            const records = await pb.collection("Experiencia").getFullList({
+                sort: "-Order",
+            })
+            return records
+        }
+        fetchExperience().then((records) => {
+            setExperienceList(records)
+        })
+
+        // Educación
+        const fetchEducation = async () => {
+            const records = await pb.collection("Educacion").getFullList({
+                sort: "-created",
+            })
+            return records
+        }
+        fetchEducation().then((records) => {
+            setEducationList(records)
+        })
+
+        // Certificados
+        const fetchCertificates = async () => {
+            const records = await pb.collection("Certificados").getFullList({
+                sort: "-created",
+            })
+            return records
+        }
+        fetchCertificates().then((records) => {
+            setCertificateList(records)
+        })
+    }, [])
 
     return (
         <div className={styles.App}>
@@ -112,14 +171,14 @@ function App() {
             <div className={waveTopLarge} />
             <section id="projects" className={styles.Projects}>
                 <h1 className={styles.Titulo1}>Proyectos</h1>
-                {projects.map((project) => (
+                {projectList.map((project) => (
                     <Proyecto
-                        key={project.title}
-                        title={project.title}
-                        description={project.description}
-                        tags={project.tags}
-                        url={project.url}
-                        liveDemo={project.liveDemo}
+                        key={project.Title}
+                        title={project.Title}
+                        description={project.Description}
+                        tags={project.Tags}
+                        url={project.Github}
+                        liveDemo={project.LiveDemo}
                     />
                 ))}
             </section>
@@ -128,36 +187,36 @@ function App() {
 
             <section id="experience" className={styles.Experience}>
                 <h1 className={styles.Titulo2}>Experiencia laboral</h1>
-                {experience.map((exp) => (
+                {experienceList.map((exp) => (
                     <Experience
-                        key={exp.title}
-                        title={exp.title}
-                        description={exp.description}
-                        year={exp.year}
+                        key={exp.Position}
+                        title={exp.Position}
+                        description={exp.Description}
+                        year={exp.Date}
                     />
                 ))}
             </section>
 
             <section id="education" className={styles.Education}>
                 <h1 className={styles.Titulo2}>Educación</h1>
-                {education.map((edu) => (
+                {educationList.map((edu) => (
                     <Education
-                        key={edu.title}
-                        title={edu.title}
-                        description={edu.description}
-                        year={edu.year}
+                        key={edu.Institute}
+                        title={edu.Institute}
+                        description={edu.Description}
+                        year={edu.Time}
                     />
                 ))}
             </section>
 
             <section id="certificates" className={styles.Certificates}>
                 <h1 className={styles.Titulo2}>Certificados</h1>
-                {certificates.map((cert) => (
+                {certificateList.map((cert) => (
                     <Education
-                        key={cert.title}
-                        title={cert.title}
-                        description={cert.description}
-                        year={cert.year}
+                        key={cert.Title}
+                        title={cert.Title}
+                        description={cert.Institute}
+                        year={cert.Date}
                     />
                 ))}
             </section>

@@ -6234,6 +6234,11 @@ pkg-dir@^5.0.0:
   dependencies:
     find-up "^5.0.0"
 
+pocketbase@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/pocketbase/-/pocketbase-0.19.0.tgz#d86670d2e13efb508c1228f662093382d7776d91"
+  integrity sha512-bUVZfVdD17K8GnwbeDMZPEdREVg2YE0F8uHPDC0zer4VtwXUqoPCCeudTy3fhUE7pfuKnfpuPxeBSYsBY3AGIQ==
+
 polished@^4.2.2:
   version "4.2.2"
   resolved "https://registry.npmjs.org/polished/-/polished-4.2.2.tgz"
