@@ -148,7 +148,7 @@ const techStack = [
     },
     {
         name: "AWS",
-        icon: `${devIcons}amazonwebservices/amazonwebservices-original.svg`,
+        icon: `${devIcons}amazonwebservices/amazonwebservices-original-wordmark.svg`,
     },
     {
         name: "Neo4j",
