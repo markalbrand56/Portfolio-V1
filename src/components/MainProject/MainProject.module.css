@@ -53,7 +53,7 @@
     background-color: var(--accent);
 }
 
-.Tags {
+.TagsWrapped {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,6 +66,17 @@
     gap: 1em; /* Espacio entre las etiquetas */
     scrollbar-width: none; /* Para Firefox */
     -ms-overflow-style: none;  /* Para IE y Edge */
+}
+
+.Tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: fit-content;
+    margin: 1em;
 }
 
 .Tags::-webkit-scrollbar {
@@ -138,18 +149,28 @@
 @media screen and (max-width: 800px) {
     .Container {
         padding: 1.5em;
+        width: calc(90% - 2em);
     }
-    .Tags {
-        margin: 0;
+    .TagsWrapped {
+        padding: 0;
     }
     .TagsWrapper {
         margin: 0;
     }
+    .Tags {
+        margin: 1em 0 0 0;
+    }
     .Tag {
-        font-size: 0.9rem;
-        margin-top: 0;
+        font-size: 0.8rem;
+        margin: 0.5em;
+        padding: 0.5em;
     }
     .Header {
         flex-direction: column;
+    }
+
+    .Content p {
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }

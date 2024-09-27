@@ -36,7 +36,14 @@ function MainProject({ title, description, tags, url, liveDemo, type }) {
                         </button>
                     )}
 
-                    <div className={styles.Tags} ref={tagContainerRef}>
+                    <div
+                        className={
+                            shouldShowCarousel
+                                ? styles.TagsWrapped
+                                : styles.Tags
+                        }
+                        ref={tagContainerRef}
+                    >
                         {tags.map((tag) => (
                             <span key={tag} className={styles.Tag}>
                                 {tag}
