@@ -41,7 +41,7 @@ const projects = [
         Tags: ["Python", "FastAPI"],
         Github: "https://github.com/markalbrand56/TC-Proyecto-3-API",
         Description:
-            "Proyecto de Teoría de la Computación. Consiste en una REST API que permite simular una máquina de " +
+            "MainProject de Teoría de la Computación. Consiste en una REST API que permite simular una máquina de " +
             "Turing. Utiliza FastAPI para la construcción de una API para simular la máquina de Turing y regresar " +
             "los resultados de la simulación hacia el frontend. La simulación acepta máquinas de Turing deterministas" +
             " de una sola cinta.",

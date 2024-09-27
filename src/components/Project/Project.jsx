@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styles from "./Proyecto.module.css"
+import styles from "./Project.module.css"
 import illustrations from "../../assets/illustrations"
 import ButtonLink from "../ButtonLink/ButtonLink"
 
-function Proyecto({ title, description, tags, url, liveDemo }) {
+function Project({ title, description, tags, url, liveDemo }) {
     return (
         <div className={styles.Container}>
             <h1>{title}</h1>
@@ -36,11 +36,11 @@ function Proyecto({ title, description, tags, url, liveDemo }) {
     )
 }
 
-Proyecto.defaultProps = {
+Project.defaultProps = {
     liveDemo: null,
 }
 
-Proyecto.propTypes = {
+Project.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -48,4 +48,4 @@ Proyecto.propTypes = {
     liveDemo: PropTypes.string,
 }
 
-export default Proyecto
+export default Project

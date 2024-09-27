@@ -9,11 +9,12 @@ import About from "./components/About/About"
 import ButtonLink from "./components/ButtonLink/ButtonLink"
 import Education from "./components/Education/Education"
 import Experience from "./components/Experience/Experience"
-import Proyecto from "./components/Proyecto/Proyecto"
+import Project from "./components/Project/Project.jsx"
 import TechStack from "./components/TechStack/TechStack"
 
 import illustrations from "./assets/illustrations"
 import { about } from "./assets/data"
+import MainProject from "./components/MainProject/MainProject.jsx"
 // import { certificates, education, experience, projects } from "./assets/data"
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     const pb = new PocketBase(backendUrl)
 
     const [projectList, setProjectList] = useState([])
+    const [mainProjectList, setMainProjectList] = useState([])
     const [experienceList, setExperienceList] = useState([])
     const [educationList, setEducationList] = useState([])
     const [certificateList, setCertificateList] = useState([])
@@ -44,6 +46,22 @@ function App() {
         }
         fetchProjects().then((records) => {
             setProjectList(records)
+        })
+
+        const fetchMainProjects = async () => {
+            const records = await pb
+                .collection("Proyectos_Principales")
+                .getFullList({
+                    sort: "created",
+                })
+            return records.map((record) => ({
+                ...record,
+                Tags: record.Tags.split(",").map((tag) => tag.trim()),
+                LiveDemo: record.LiveDemo === "" ? null : record.LiveDemo,
+            }))
+        }
+        fetchMainProjects().then((records) => {
+            setMainProjectList((prev) => [...prev, ...records])
         })
 
         // Experiencia
@@ -171,8 +189,19 @@ function App() {
             <div className={waveTopLarge} />
             <section id="projects" className={styles.Projects}>
                 <h1 className={styles.Titulo1}>Proyectos</h1>
+                {mainProjectList.map((project) => (
+                    <MainProject
+                        key={project.Title}
+                        title={project.Title}
+                        description={project.Description}
+                        tags={project.Tags}
+                        url={project.Github}
+                        liveDemo={project.LiveDemo}
+                        type={project.Type}
+                    />
+                ))}
                 {projectList.map((project) => (
-                    <Proyecto
+                    <Project
                         key={project.Title}
                         title={project.Title}
                         description={project.Description}
