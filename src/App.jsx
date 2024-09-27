@@ -37,7 +37,7 @@ function App() {
             const records = await pb
                 .collection("Proyectos_Secundarios")
                 .getFullList({
-                    sort: "created",
+                    sort: "-created",
                 })
             // Convert Tags to array
             return records.map((record) => ({
@@ -54,7 +54,7 @@ function App() {
             const records = await pb
                 .collection("Proyectos_Principales")
                 .getFullList({
-                    sort: "created",
+                    sort: "-created",
                 })
             return records.map((record) => ({
                 ...record,

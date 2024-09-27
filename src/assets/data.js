@@ -79,12 +79,12 @@ const projects = [
 
 const techStack = [
     {
-        name: "Python",
-        icon: `${devIcons}python/python-original.svg`,
-    },
-    {
         name: "Go",
         icon: `${devIcons}go/go-original-wordmark.svg`,
+    },
+    {
+        name: "Python",
+        icon: `${devIcons}python/python-original.svg`,
     },
     {
         name: "C",
@@ -95,40 +95,20 @@ const techStack = [
         icon: `${devIcons}cplusplus/cplusplus-original.svg`,
     },
     {
-        name: "Java",
-        icon: `${devIcons}java/java-original.svg`,
-    },
-    {
-        name: "Kotlin",
-        icon: `${devIcons}kotlin/kotlin-original.svg`,
-    },
-    {
-        name: "HTML",
-        icon: `${devIcons}html5/html5-original.svg`,
-    },
-    {
-        name: "CSS",
-        icon: `${devIcons}css3/css3-original.svg`,
-    },
-    {
-        name: "JavaScript",
-        icon: `${devIcons}javascript/javascript-original.svg`,
-    },
-    {
-        name: "React",
-        icon: `${devIcons}react/react-original.svg`,
-    },
-    {
-        name: "Django",
-        icon: `${devIcons}django/django-plain.svg`,
-    },
-    {
         name: "FastAPI",
         icon: `${devIcons}fastapi/fastapi-original.svg`,
     },
     {
         name: "Gin Gonic",
         icon: "https://raw.githubusercontent.com/gin-gonic/logo/master/color.png",
+    },
+    {
+        name: "Django",
+        icon: `${devIcons}django/django-plain.svg`,
+    },
+    {
+        name: "AWS",
+        icon: `${devIcons}amazonwebservices/amazonwebservices-original-wordmark.svg`,
     },
     {
         name: "Android",
@@ -147,12 +127,32 @@ const techStack = [
         icon: `${devIcons}mongodb/mongodb-original.svg`,
     },
     {
-        name: "AWS",
-        icon: `${devIcons}amazonwebservices/amazonwebservices-original-wordmark.svg`,
+        name: "HTML",
+        icon: `${devIcons}html5/html5-original.svg`,
     },
     {
-        name: "Neo4j",
-        icon: `${devIcons}neo4j/neo4j-original.svg`,
+        name: "CSS",
+        icon: `${devIcons}css3/css3-original.svg`,
+    },
+    {
+        name: "JavaScript",
+        icon: `${devIcons}javascript/javascript-original.svg`,
+    },
+    {
+        name: "React",
+        icon: `${devIcons}react/react-original.svg`,
+    },
+    {
+        name: "Vue.js",
+        icon: `${devIcons}vuejs/vuejs-original.svg`,
+    },
+    {
+        name: "Java",
+        icon: `${devIcons}java/java-original.svg`,
+    },
+    {
+        name: "Kotlin",
+        icon: `${devIcons}kotlin/kotlin-original.svg`,
     },
     {
         name: "JetBrains",
@@ -173,18 +173,6 @@ const techStack = [
     {
         name: "Linux",
         icon: `${devIcons}linux/linux-original.svg`,
-    },
-    {
-        name: "Ubuntu",
-        icon: `${devIcons}ubuntu/ubuntu-plain.svg`,
-    },
-    {
-        name: "NPM",
-        icon: `${devIcons}npm/npm-original-wordmark.svg`,
-    },
-    {
-        name: "Yarn",
-        icon: `${devIcons}yarn/yarn-original.svg`,
     },
 ]
 
