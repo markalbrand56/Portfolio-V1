@@ -34,9 +34,11 @@ function App() {
     useEffect(() => {
         // Proyectos
         const fetchProjects = async () => {
-            const records = await pb.collection("Proyectos").getFullList({
-                sort: "created",
-            })
+            const records = await pb
+                .collection("Proyectos_Secundarios")
+                .getFullList({
+                    sort: "created",
+                })
             // Convert Tags to array
             return records.map((record) => ({
                 ...record,
@@ -191,7 +193,7 @@ function App() {
                 <h1 className={styles.Titulo1}>Proyectos</h1>
                 {mainProjectList.map((project) => (
                     <MainProject
-                        key={project.Title}
+                        key={project.id}
                         title={project.Title}
                         description={project.Description}
                         tags={project.Tags}
@@ -202,7 +204,7 @@ function App() {
                 ))}
                 {projectList.map((project) => (
                     <Project
-                        key={project.Title}
+                        key={project.id}
                         title={project.Title}
                         description={project.Description}
                         tags={project.Tags}
