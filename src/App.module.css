@@ -215,6 +215,15 @@ h1 {
     background-color: var(--secondary);
 }
 
+@media screen and (max-width: 850px) {
+
+    .SecondaryProjects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .Education {
     display: flex;
     flex-direction: row;

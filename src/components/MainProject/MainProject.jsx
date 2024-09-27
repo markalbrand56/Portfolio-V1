@@ -1,10 +1,23 @@
-import React from "react"
+import React, { useRef } from "react"
 import PropTypes from "prop-types"
 import styles from "./MainProject.module.css"
 import illustrations from "../../assets/illustrations"
 import ButtonLink from "../ButtonLink/ButtonLink"
 
 function MainProject({ title, description, tags, url, liveDemo, type }) {
+    const tagContainerRef = useRef(null)
+    const maxTags = 5
+
+    const scrollLeft = () => {
+        tagContainerRef.current.scrollBy({ left: -300, behavior: "smooth" })
+    }
+
+    const scrollRight = () => {
+        tagContainerRef.current.scrollBy({ left: 300, behavior: "smooth" })
+    }
+
+    const shouldShowCarousel = tags.length > maxTags
+
     return (
         <div className={styles.Container}>
             <div className={styles.Header}>
@@ -12,12 +25,34 @@ function MainProject({ title, description, tags, url, liveDemo, type }) {
                     <h1>{title}</h1>
                     <span>{type}</span>
                 </div>
-                <div className={styles.Tags}>
-                    {tags.map((tag) => (
-                        <span key={tag} className={styles.Tag}>
-                            {tag}
-                        </span>
-                    ))}
+                <div className={styles.TagsWrapper}>
+                    {shouldShowCarousel && (
+                        <button
+                            onClick={scrollLeft}
+                            className={styles.ScrollButton}
+                            type="button"
+                        >
+                            ◀
+                        </button>
+                    )}
+
+                    <div className={styles.Tags} ref={tagContainerRef}>
+                        {tags.map((tag) => (
+                            <span key={tag} className={styles.Tag}>
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+
+                    {shouldShowCarousel && (
+                        <button
+                            onClick={scrollRight}
+                            className={styles.ScrollButton}
+                            type="button"
+                        >
+                            ▶
+                        </button>
+                    )}
                 </div>
             </div>
 

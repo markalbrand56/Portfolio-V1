@@ -47,7 +47,7 @@ function App() {
             }))
         }
         fetchProjects().then((records) => {
-            setProjectList((prev) => [...prev, ...records])
+            setProjectList(records)
         })
 
         const fetchMainProjects = async () => {
@@ -63,7 +63,7 @@ function App() {
             }))
         }
         fetchMainProjects().then((records) => {
-            setMainProjectList((prev) => [...prev, ...records])
+            setMainProjectList(records)
         })
 
         // Experiencia

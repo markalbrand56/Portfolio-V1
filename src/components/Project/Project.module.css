@@ -55,6 +55,21 @@
     background-color: var(--accent);
 }
 
+.TagsWrapped {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap; /* Evita el wrapping */
+
+    width: 100%; /* Se ajusta al ancho disponible */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    padding: 1em;
+    gap: 1em; /* Espacio entre las etiquetas */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none;  /* Para IE y Edge */
+}
+
 .Tags {
     display: flex;
     flex-direction: row;
@@ -66,10 +81,14 @@
     margin: 1em;
 }
 
-.Tag{
-    margin: 0.5em 1em;
-    padding: 0.5em 1em;
+.Tags::-webkit-scrollbar {
+    display: none; /* Oculta el scrollbar en Chrome, Safari y Opera */
+}
 
+.Tag {
+    flex-shrink: 0; /* Evita que los tags se reduzcan de tamaño */
+    margin: 0.5em;
+    padding: 0.5em 1em;
 
     font-weight: 500;
     font-size: 1rem;
@@ -81,6 +100,23 @@
 
 .Tag:hover {
     background-color: var(--accent);
+}
+
+.TagsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.ScrollButton {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--primary);
+    padding: 0 0.5em;
 }
 
 .Content {
@@ -112,9 +148,10 @@
     background-color: black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     .Container {
         padding: 1.5em;
+        width: 80%;
     }
     .Tags {
         margin: 1em 0 0 0;

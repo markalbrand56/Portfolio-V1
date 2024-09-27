@@ -57,17 +57,25 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-wrap: nowrap; /* Evita el wrapping */
 
-    width: fit-content;
-    margin: 1em;
+    width: 100%; /* Se ajusta al ancho disponible */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    padding: 1em;
+    gap: 1em; /* Espacio entre las etiquetas */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none;  /* Para IE y Edge */
 }
 
-.Tag{
-    margin: 0.5em 1em;
-    padding: 0.5em 1em;
+.Tags::-webkit-scrollbar {
+    display: none; /* Oculta el scrollbar en Chrome, Safari y Opera */
+}
 
+.Tag {
+    flex-shrink: 0; /* Evita que los tags se reduzcan de tamaño */
+    margin: 0.5em;
+    padding: 0.5em 1em;
 
     font-weight: 500;
     font-size: 1rem;
@@ -80,6 +88,23 @@
 .Tag:hover {
     background-color: var(--accent);
 }
+
+.TagsWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ScrollButton {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--primary);
+    padding: 0 0.5em;
+}
+
+
 
 .Content {
     display: flex;
@@ -110,16 +135,21 @@
     background-color: black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .Container {
         padding: 1.5em;
     }
     .Tags {
-        margin: 1em 0 0 0;
+        margin: 0;
+    }
+    .TagsWrapper {
+        margin: 0;
     }
     .Tag {
-        font-size: 0.8rem;
-        margin: 0.5em;
-        padding: 0.5em;
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+    .Header {
+        flex-direction: column;
     }
 }
