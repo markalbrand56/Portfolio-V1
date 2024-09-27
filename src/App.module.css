@@ -135,6 +135,7 @@ h1 {
     width: 80%;
     text-align: center;
     overflow-wrap: break-word;
+    margin: 0 0 2rem 0;
 }
 
 .Titulo2{
@@ -146,6 +147,8 @@ h1 {
     width: 80%;
     text-align: center;
     overflow-wrap: break-word;
+
+    margin: 1rem 0 2rem 0;
 }
 
 @media screen and (max-width: 500px) {
