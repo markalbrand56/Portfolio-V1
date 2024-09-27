@@ -4,11 +4,14 @@ import styles from "./Project.module.css"
 import illustrations from "../../assets/illustrations"
 import ButtonLink from "../ButtonLink/ButtonLink"
 
-function Project({ title, description, tags, url, liveDemo }) {
+function Project({ title, description, tags, url, liveDemo, type }) {
     return (
         <div className={styles.Container}>
-            <h1>{title}</h1>
-            <div className={styles.Content}>
+            <div className={styles.Header}>
+                <div className={styles.Title}>
+                    <h1>{title}</h1>
+                    <span>{type}</span>
+                </div>
                 <div className={styles.Tags}>
                     {tags.map((tag) => (
                         <span key={tag} className={styles.Tag}>
@@ -16,21 +19,24 @@ function Project({ title, description, tags, url, liveDemo }) {
                         </span>
                     ))}
                 </div>
+            </div>
+
+            <div className={styles.Content}>
                 <p>{description}</p>
-                <div className={styles.Buttons}>
-                    <ButtonLink url={url} icon={illustrations.githubLogin}>
-                        Ver en
+            </div>
+            <div className={styles.Buttons}>
+                <ButtonLink url={url} icon={illustrations.githubLogin}>
+                    Ver en
+                </ButtonLink>
+                {liveDemo && (
+                    <ButtonLink
+                        url={liveDemo}
+                        icon={illustrations.externalLinks}
+                        theme="primary"
+                    >
+                        Live Demo
                     </ButtonLink>
-                    {liveDemo && (
-                        <ButtonLink
-                            url={liveDemo}
-                            icon={illustrations.externalLinks}
-                            theme="primary"
-                        >
-                            Live Demo
-                        </ButtonLink>
-                    )}
-                </div>
+                )}
             </div>
         </div>
     )
@@ -46,6 +52,7 @@ Project.propTypes = {
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     url: PropTypes.string.isRequired,
     liveDemo: PropTypes.string,
+    type: PropTypes.string.isRequired,
 }
 
 export default Project

@@ -186,6 +186,35 @@ h1 {
     background-color: var(--secondary);
 }
 
+.MainProjects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    height: 100%;
+    width: calc(100% - 2em);
+    margin: 0;
+    padding: 2em 0;
+
+    background-color: var(--secondary);
+}
+
+.SecondaryProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    height: 100%;
+    width: calc(85% - 2em);
+    margin: 0;
+    padding: 2em 0;
+
+    background-color: var(--secondary);
+}
+
 .Education {
     display: flex;
     flex-direction: row;

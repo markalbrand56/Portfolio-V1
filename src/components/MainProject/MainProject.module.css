@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: start;
 
-    width: min(85%, 1250px);
+    width: calc(90% - 2em);
     padding: 3em;
 
     margin: 1.5em 0;
@@ -44,7 +44,7 @@
 
     font-size: 1rem;
     color: black;
-    background-color: var(--primary-3);
+    background-color: var(--secondary);
     border-radius: 8px;
 
 }
