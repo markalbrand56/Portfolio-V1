@@ -111,6 +111,14 @@ const techStack = [
         icon: `${devIcons}amazonwebservices/amazonwebservices-original-wordmark.svg`,
     },
     {
+        name: "NGINX",
+        icon: `${devIcons}nginx/nginx-original.svg`,
+    },
+    {
+        name: "Docker",
+        icon: `${devIcons}docker/docker-original-wordmark.svg`,
+    },
+    {
         name: "Android",
         icon: `${devIcons}android/android-original.svg`,
     },
@@ -127,6 +135,14 @@ const techStack = [
         icon: `${devIcons}mongodb/mongodb-original.svg`,
     },
     {
+        name: "React",
+        icon: `${devIcons}react/react-original.svg`,
+    },
+    {
+        name: "Vue.js",
+        icon: `${devIcons}vuejs/vuejs-original.svg`,
+    },
+    {
         name: "HTML",
         icon: `${devIcons}html5/html5-original.svg`,
     },
@@ -139,32 +155,12 @@ const techStack = [
         icon: `${devIcons}javascript/javascript-original.svg`,
     },
     {
-        name: "React",
-        icon: `${devIcons}react/react-original.svg`,
-    },
-    {
-        name: "Vue.js",
-        icon: `${devIcons}vuejs/vuejs-original.svg`,
-    },
-    {
         name: "Java",
         icon: `${devIcons}java/java-original.svg`,
     },
     {
         name: "Kotlin",
         icon: `${devIcons}kotlin/kotlin-original.svg`,
-    },
-    {
-        name: "JetBrains",
-        icon: `${devIcons}jetbrains/jetbrains-original.svg`,
-    },
-    {
-        name: "Visual Studio Code",
-        icon: `${devIcons}vscode/vscode-original.svg`,
-    },
-    {
-        name: "Visual Studio",
-        icon: `${devIcons}visualstudio/visualstudio-plain.svg`,
     },
     {
         name: "Git",
