@@ -13,19 +13,20 @@ const CATEGORIES = [
 ]
 
 function TechStack({ techStack }) {
-    const [hoveredTech, setHoveredTech] = useState({})
+    const [selectedTech, setSelectedTech] = useState(null)
     const [selectedCategory, setSelectedCategory] = useState("Lenguajes")
 
-    const handleMouseEnter = (techName) => {
-        setHoveredTech(techName)
-    }
-
-    const handleMouseLeave = () => {
-        setHoveredTech({})
+    const handleTechClick = (tech) => {
+        if (selectedTech?.name === tech.name) {
+            setSelectedTech(null)
+        } else {
+            setSelectedTech(tech)
+        }
     }
 
     const handleCategoryChange = (category) => {
         setSelectedCategory(category)
+        setSelectedTech(null)
     }
 
     const filteredTechStack = techStack.filter((tech) =>
@@ -44,7 +45,6 @@ function TechStack({ techStack }) {
                                 : styles.CategoryButton
                         }
                         onClick={() => handleCategoryChange(category)}
-                        type="button"
                     >
                         {category}
                     </button>
@@ -56,20 +56,29 @@ function TechStack({ techStack }) {
                         key={tech.name}
                         src={tech.icon}
                         alt={tech.name}
-                        className={styles.Item}
-                        onMouseEnter={() => handleMouseEnter(tech)}
-                        onMouseLeave={handleMouseLeave}
+                        className={`${styles.Item} ${
+                            selectedTech?.name === tech.name
+                                ? styles.Selected
+                                : ""
+                        }`}
+                        onClick={() => handleTechClick(tech)}
                     />
                 ))}
             </div>
-            {hoveredTech.name && (
-                <>
-                    <p className={styles.Name}>{hoveredTech.name}</p>
-                    <p className={styles.Description}>
-                        {hoveredTech.description}
-                    </p>
-                </>
-            )}
+            <p
+                className={`${styles.Name} ${
+                    selectedTech ? styles.NameVisible : ""
+                }`}
+            >
+                {selectedTech?.name}
+            </p>
+            <p
+                className={`${styles.Description} ${
+                    selectedTech ? styles.DescriptionVisible : ""
+                }`}
+            >
+                {selectedTech?.description}
+            </p>
         </div>
     )
 }
@@ -77,10 +86,10 @@ function TechStack({ techStack }) {
 TechStack.propTypes = {
     techStack: PropTypes.arrayOf(
         PropTypes.shape({
-            name: PropTypes.string,
-            icon: PropTypes.string,
-            description: PropTypes.string,
-            category: PropTypes.arrayOf(PropTypes.string),
+            name: PropTypes.string.isRequired,
+            icon: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            category: PropTypes.arrayOf(PropTypes.string).isRequired,
         })
     ).isRequired,
 }
