@@ -15,7 +15,6 @@ import MainProject from "./components/MainProject/MainProject"
 
 import illustrations from "./assets/illustrations"
 import { about } from "./assets/data"
-// import { certificates, education, experience, projects } from "./assets/data"
 
 function App() {
     const backendUrl = import.meta.env.VITE_BACKEND_URL
@@ -105,9 +104,6 @@ function App() {
             const records = await pb.collection("TechStack").getFullList({
                 sort: "created",
             })
-
-            console.log("TechStack", records)
-
             return records
         }
         fetchTechStack().then((records) => {
