@@ -10,6 +10,7 @@ const CATEGORIES = [
     "Backend",
     "DevOps",
     "Cloud",
+    "AI",
 ]
 
 function TechStack({ techStack }) {
