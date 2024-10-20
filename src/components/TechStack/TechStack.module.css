@@ -26,7 +26,7 @@
 }
 
 .Item {
-    width: 3rem;
+    width: 3.5rem;
     aspect-ratio: 1;
     object-fit: scale-down;
     padding: 0.5em;
@@ -39,6 +39,7 @@
     width: 4rem;
     border-radius: 15px;
     border: 4px solid var(--accent);
+    cursor: pointer;
 }
 
 .Name {
@@ -47,6 +48,53 @@
 
     text-align: center;
     font-size: 1.5rem;
+}
+
+.Description {
+    min-height: 50px;
+    margin: 0;
+    padding: 1em;
+
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.CategorySelector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: min(100% - 4em);
+
+    margin: 1em 1em;
+    padding: 1em;
+
+    border: 1px red dashed;
+
+}
+
+.ActiveCategory {
+    background-color: var(--accent);
+    color: black;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0.5em;
+    cursor: pointer;
+
+    font-size: 1rem;
+}
+
+.CategoryButton {
+    background-color: var(--secondary);
+    color: black;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0.5em;
+    cursor: pointer;
+
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 500px) {

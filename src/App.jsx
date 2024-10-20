@@ -26,6 +26,7 @@ function App() {
     const [experienceList, setExperienceList] = useState([])
     const [educationList, setEducationList] = useState([])
     const [certificateList, setCertificateList] = useState([])
+    const [techStackList, setTechStackList] = useState([])
 
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
     const waveBottomLarge = `${styles.SpacerLarge} ${styles.waveBottomLarge1}`
@@ -97,6 +98,20 @@ function App() {
         }
         fetchCertificates().then((records) => {
             setCertificateList(records)
+        })
+
+        // Tech Stack
+        const fetchTechStack = async () => {
+            const records = await pb.collection("TechStack").getFullList({
+                sort: "created",
+            })
+
+            console.log("TechStack", records)
+
+            return records
+        }
+        fetchTechStack().then((records) => {
+            setTechStackList(records)
         })
     }, [])
 
@@ -186,7 +201,7 @@ function App() {
                 </div>
             </section>
 
-            <TechStack />
+            <TechStack techStack={techStackList} />
 
             <div className={waveTopLarge} />
             <section id="projects" className={styles.Projects}>
