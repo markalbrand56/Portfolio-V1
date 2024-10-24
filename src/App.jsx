@@ -167,7 +167,7 @@ function App() {
             <section className={styles.Hero}>
                 <p>Hola! Mi nombre es</p>
                 <h1 className={styles.Name}>Mark Albrand</h1>
-                <h2>Backend Developer</h2>
+                <h2>Software Engineer</h2>
                 <span>
                     Soy un estudiante en la carrera de Ingeniería en Ciencias de
                     la Computación, con experiencia en desarrollo web y backend.
