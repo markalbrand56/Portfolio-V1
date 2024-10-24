@@ -15,7 +15,6 @@ import MainProject from "./components/MainProject/MainProject"
 
 import illustrations from "./assets/illustrations"
 import { about } from "./assets/data"
-// import { certificates, education, experience, projects } from "./assets/data"
 
 function App() {
     const backendUrl = import.meta.env.VITE_BACKEND_URL
@@ -26,6 +25,7 @@ function App() {
     const [experienceList, setExperienceList] = useState([])
     const [educationList, setEducationList] = useState([])
     const [certificateList, setCertificateList] = useState([])
+    const [techStackList, setTechStackList] = useState([])
 
     const waveTopLarge = `${styles.SpacerLarge} ${styles.waveTopLarge1}`
     const waveBottomLarge = `${styles.SpacerLarge} ${styles.waveBottomLarge1}`
@@ -98,6 +98,17 @@ function App() {
         fetchCertificates().then((records) => {
             setCertificateList(records)
         })
+
+        // Tech Stack
+        const fetchTechStack = async () => {
+            const records = await pb.collection("TechStack").getFullList({
+                sort: "created",
+            })
+            return records
+        }
+        fetchTechStack().then((records) => {
+            setTechStackList(records)
+        })
     }, [])
 
     return (
@@ -156,7 +167,7 @@ function App() {
             <section className={styles.Hero}>
                 <p>Hola! Mi nombre es</p>
                 <h1 className={styles.Name}>Mark Albrand</h1>
-                <h2>Backend Developer</h2>
+                <h2>Software Engineer</h2>
                 <span>
                     Soy un estudiante en la carrera de Ingeniería en Ciencias de
                     la Computación, con experiencia en desarrollo web y backend.
@@ -186,7 +197,7 @@ function App() {
                 </div>
             </section>
 
-            <TechStack />
+            <TechStack techStack={techStackList} />
 
             <div className={waveTopLarge} />
             <section id="projects" className={styles.Projects}>

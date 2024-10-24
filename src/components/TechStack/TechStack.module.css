@@ -5,9 +5,8 @@
     justify-content: center;
 
     width: min(90%, 1500px);
-    margin: 1em 0;
+    margin: 3em 0 1em 0;
 
-    /*border: black 2px solid;*/
     border-radius: 5px;
 }
 
@@ -26,7 +25,7 @@
 }
 
 .Item {
-    width: 3rem;
+    width: 4rem;
     aspect-ratio: 1;
     object-fit: scale-down;
     padding: 0.5em;
@@ -39,29 +38,106 @@
     width: 4rem;
     border-radius: 15px;
     border: 4px solid var(--accent);
+    cursor: pointer;
+}
+
+.Selected {
+    width: 4rem;
+    border-radius: 15px;
+    border: 4px solid var(--accent);
 }
 
 .Name {
-    min-height: 50px;
+    /*min-height: 50px;*/
     margin: 0;
 
     text-align: center;
     font-size: 1.5rem;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Description {
+    /*min-height: 50px;*/
+    margin: 0;
+    padding: 1em;
+
+    text-align: center;
+    font-size: 1.2rem;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.NameVisible, .DescriptionVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.CategorySelector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: min(100% - 4em);
+
+    margin: 1em 1em;
+    padding: 1em;
+
+}
+
+.ActiveCategory {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+
+    background-color: var(--accent);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 1rem;
+}
+
+.CategoryButton {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+
+    background-color: var(--secondary);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 500px) {
     .Item {
-        width: 2.3rem;
-        margin: 0.3em;
+        width: 3rem;
+        margin: 0.5em;
     }
     .Item:hover {
         width: 3rem;
     }
     .Name {
-        min-height: 25px;
         margin: 0;
 
         text-align: center;
         font-size: 1.1rem;
+    }
+    .Description {
+        margin: 0;
+        padding: 0.5em;
+
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .CategorySelector {
+        margin: 0.5em;
+        padding: 0.5em;
     }
 }
